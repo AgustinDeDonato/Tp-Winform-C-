@@ -29,62 +29,22 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.Titulo = new System.Windows.Forms.Label();
-            this.btnMenuArticulos = new System.Windows.Forms.Button();
-            this.btnMenuMarcas = new System.Windows.Forms.Button();
-            this.btnMenuCategorias = new System.Windows.Forms.Button();
             this.msgAyuda = new System.Windows.Forms.ToolTip(this.components);
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.articulosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.marcasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.categoriasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.nuevoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.modificarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mostrarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.nuevoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.modificarToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.mostrarToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.nuevoToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.modificarToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.mostrarToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // Titulo
-            // 
-            this.Titulo.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.Titulo.AutoSize = true;
-            this.Titulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Titulo.Location = new System.Drawing.Point(40, 9);
-            this.Titulo.Name = "Titulo";
-            this.Titulo.Size = new System.Drawing.Size(238, 25);
-            this.Titulo.TabIndex = 0;
-            this.Titulo.Text = "Campos gestionables";
-            this.Titulo.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.Titulo.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // btnMenuArticulos
-            // 
-            this.btnMenuArticulos.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnMenuArticulos.AutoSize = true;
-            this.btnMenuArticulos.Location = new System.Drawing.Point(120, 71);
-            this.btnMenuArticulos.Name = "btnMenuArticulos";
-            this.btnMenuArticulos.Size = new System.Drawing.Size(75, 23);
-            this.btnMenuArticulos.TabIndex = 1;
-            this.btnMenuArticulos.Text = "Articulos";
-            this.msgAyuda.SetToolTip(this.btnMenuArticulos, "·Crear Articulos\r\n·Modificar Articulos\r\n·Borrar Articulos\r\n·Listar Articulos\r\n·Bu" +
-        "squeda de Articulos");
-            this.btnMenuArticulos.UseVisualStyleBackColor = true;
-            this.btnMenuArticulos.Click += new System.EventHandler(this.btnMenuArticulos_Click);
-            // 
-            // btnMenuMarcas
-            // 
-            this.btnMenuMarcas.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnMenuMarcas.Location = new System.Drawing.Point(120, 112);
-            this.btnMenuMarcas.Name = "btnMenuMarcas";
-            this.btnMenuMarcas.Size = new System.Drawing.Size(75, 23);
-            this.btnMenuMarcas.TabIndex = 2;
-            this.btnMenuMarcas.Text = "Marcas";
-            this.msgAyuda.SetToolTip(this.btnMenuMarcas, "·Crear Marcas\r\n·Modificar Marcas\r\n·Listar Marcas\r\n·Busqueda de Marcas\r\n");
-            this.btnMenuMarcas.UseVisualStyleBackColor = true;
-            // 
-            // btnMenuCategorias
-            // 
-            this.btnMenuCategorias.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnMenuCategorias.Location = new System.Drawing.Point(120, 153);
-            this.btnMenuCategorias.Name = "btnMenuCategorias";
-            this.btnMenuCategorias.Size = new System.Drawing.Size(75, 23);
-            this.btnMenuCategorias.TabIndex = 3;
-            this.btnMenuCategorias.Text = "Categorias";
-            this.msgAyuda.SetToolTip(this.btnMenuCategorias, "·Crear Categorias\r\n·Modificar Categorias\r\n·Listar Categorias\r\n·Busqueda de Catego" +
-        "rias\r\n");
-            this.btnMenuCategorias.UseVisualStyleBackColor = true;
             // 
             // msgAyuda
             // 
@@ -95,34 +55,138 @@
             this.msgAyuda.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
             this.msgAyuda.ToolTipTitle = "Funciones";
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.articulosToolStripMenuItem,
+            this.marcasToolStripMenuItem,
+            this.categoriasToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(784, 24);
+            this.menuStrip1.TabIndex = 0;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // articulosToolStripMenuItem
+            // 
+            this.articulosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.nuevoToolStripMenuItem,
+            this.modificarToolStripMenuItem,
+            this.mostrarToolStripMenuItem});
+            this.articulosToolStripMenuItem.Name = "articulosToolStripMenuItem";
+            this.articulosToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
+            this.articulosToolStripMenuItem.Text = "Articulos";
+            // 
+            // marcasToolStripMenuItem
+            // 
+            this.marcasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.nuevoToolStripMenuItem1,
+            this.modificarToolStripMenuItem1,
+            this.mostrarToolStripMenuItem1});
+            this.marcasToolStripMenuItem.Name = "marcasToolStripMenuItem";
+            this.marcasToolStripMenuItem.Size = new System.Drawing.Size(57, 20);
+            this.marcasToolStripMenuItem.Text = "Marcas";
+            // 
+            // categoriasToolStripMenuItem
+            // 
+            this.categoriasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.nuevoToolStripMenuItem2,
+            this.modificarToolStripMenuItem2,
+            this.mostrarToolStripMenuItem2});
+            this.categoriasToolStripMenuItem.Name = "categoriasToolStripMenuItem";
+            this.categoriasToolStripMenuItem.Size = new System.Drawing.Size(75, 20);
+            this.categoriasToolStripMenuItem.Text = "Categorias";
+            // 
+            // nuevoToolStripMenuItem
+            // 
+            this.nuevoToolStripMenuItem.Name = "nuevoToolStripMenuItem";
+            this.nuevoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.nuevoToolStripMenuItem.Text = "Nuevo";
+            // 
+            // modificarToolStripMenuItem
+            // 
+            this.modificarToolStripMenuItem.Name = "modificarToolStripMenuItem";
+            this.modificarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.modificarToolStripMenuItem.Text = "Modificar";
+            // 
+            // mostrarToolStripMenuItem
+            // 
+            this.mostrarToolStripMenuItem.Name = "mostrarToolStripMenuItem";
+            this.mostrarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.mostrarToolStripMenuItem.Text = "Mostrar";
+            // 
+            // nuevoToolStripMenuItem1
+            // 
+            this.nuevoToolStripMenuItem1.Name = "nuevoToolStripMenuItem1";
+            this.nuevoToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.nuevoToolStripMenuItem1.Text = "Nuevo";
+            // 
+            // modificarToolStripMenuItem1
+            // 
+            this.modificarToolStripMenuItem1.Name = "modificarToolStripMenuItem1";
+            this.modificarToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.modificarToolStripMenuItem1.Text = "Modificar";
+            // 
+            // mostrarToolStripMenuItem1
+            // 
+            this.mostrarToolStripMenuItem1.Name = "mostrarToolStripMenuItem1";
+            this.mostrarToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.mostrarToolStripMenuItem1.Text = "Mostrar";
+            // 
+            // nuevoToolStripMenuItem2
+            // 
+            this.nuevoToolStripMenuItem2.Name = "nuevoToolStripMenuItem2";
+            this.nuevoToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
+            this.nuevoToolStripMenuItem2.Text = "Nuevo";
+            // 
+            // modificarToolStripMenuItem2
+            // 
+            this.modificarToolStripMenuItem2.Name = "modificarToolStripMenuItem2";
+            this.modificarToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
+            this.modificarToolStripMenuItem2.Text = "Modificar";
+            // 
+            // mostrarToolStripMenuItem2
+            // 
+            this.mostrarToolStripMenuItem2.Name = "mostrarToolStripMenuItem2";
+            this.mostrarToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
+            this.mostrarToolStripMenuItem2.Text = "Mostrar";
+            // 
             // FormMenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(314, 240);
-            this.Controls.Add(this.btnMenuCategorias);
-            this.Controls.Add(this.btnMenuMarcas);
-            this.Controls.Add(this.btnMenuArticulos);
-            this.Controls.Add(this.Titulo);
-            this.MaximumSize = new System.Drawing.Size(330, 279);
-            this.MinimumSize = new System.Drawing.Size(330, 279);
+            this.ClientSize = new System.Drawing.Size(784, 561);
+            this.Controls.Add(this.menuStrip1);
+            this.IsMdiContainer = true;
+            this.MainMenuStrip = this.menuStrip1;
+            this.MaximumSize = new System.Drawing.Size(800, 600);
+            this.MinimumSize = new System.Drawing.Size(800, 600);
             this.Name = "FormMenuPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Administrador de catalogos";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label Titulo;
-        private System.Windows.Forms.Button btnMenuArticulos;
-        private System.Windows.Forms.Button btnMenuMarcas;
-        private System.Windows.Forms.Button btnMenuCategorias;
         private System.Windows.Forms.ToolTip msgAyuda;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem articulosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem nuevoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem modificarToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mostrarToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem marcasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem nuevoToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem modificarToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem mostrarToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem categoriasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem nuevoToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem modificarToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem mostrarToolStripMenuItem2;
     }
 }
 

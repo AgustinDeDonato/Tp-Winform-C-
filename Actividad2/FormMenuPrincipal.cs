@@ -17,24 +17,5 @@ namespace Actividad2
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void toolTip1_Popup(object sender, PopupEventArgs e)
-        {
-
-        }
-
-        private void btnMenuArticulos_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
