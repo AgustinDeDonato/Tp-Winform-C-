@@ -17,5 +17,25 @@ namespace Actividad2
             InitializeComponent();
         }
 
+        private void nuevoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            foreach (var item in Application.OpenForms)
+            {
+                if (item.GetType() == typeof(FormAgregarArticulo))
+                    return;
+            }
+
+            FormAgregarArticulo ventanaAA = new FormAgregarArticulo();
+            ventanaAA.MdiParent = this;
+            ventanaAA.Show();
+            ventanaAA.Dock = DockStyle.Fill;
+            ventanaAA.TopLevel = false;
+        }
+
+
+        private void FormMenuPrincipal_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
