@@ -36,7 +36,7 @@
             this.mostrarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.marcasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nuevoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.mostrarToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.ToolStripMenuListaMarca = new System.Windows.Forms.ToolStripMenuItem();
             this.categoriasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nuevoToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.mostrarToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
@@ -75,37 +75,42 @@
             // 
             // nuevoToolStripMenuItem
             // 
+            this.nuevoToolStripMenuItem.Image = global::Actividad2.Properties.Resources.plus;
             this.nuevoToolStripMenuItem.Name = "nuevoToolStripMenuItem";
-            this.nuevoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.nuevoToolStripMenuItem.Size = new System.Drawing.Size(109, 22);
             this.nuevoToolStripMenuItem.Text = "Nuevo";
             this.nuevoToolStripMenuItem.Click += new System.EventHandler(this.nuevoToolStripMenuItem_Click);
             // 
             // mostrarToolStripMenuItem
             // 
+            this.mostrarToolStripMenuItem.Image = global::Actividad2.Properties.Resources.list;
             this.mostrarToolStripMenuItem.Name = "mostrarToolStripMenuItem";
-            this.mostrarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.mostrarToolStripMenuItem.Text = "Mostrar";
+            this.mostrarToolStripMenuItem.Size = new System.Drawing.Size(109, 22);
+            this.mostrarToolStripMenuItem.Text = "Lista";
             // 
             // marcasToolStripMenuItem
             // 
             this.marcasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.nuevoToolStripMenuItem1,
-            this.mostrarToolStripMenuItem1});
+            this.ToolStripMenuListaMarca});
             this.marcasToolStripMenuItem.Name = "marcasToolStripMenuItem";
             this.marcasToolStripMenuItem.Size = new System.Drawing.Size(57, 20);
             this.marcasToolStripMenuItem.Text = "Marcas";
             // 
             // nuevoToolStripMenuItem1
             // 
+            this.nuevoToolStripMenuItem1.Image = global::Actividad2.Properties.Resources.plus;
             this.nuevoToolStripMenuItem1.Name = "nuevoToolStripMenuItem1";
-            this.nuevoToolStripMenuItem1.Size = new System.Drawing.Size(125, 22);
+            this.nuevoToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.nuevoToolStripMenuItem1.Text = "Nuevo";
             // 
-            // mostrarToolStripMenuItem1
+            // ToolStripMenuListaMarca
             // 
-            this.mostrarToolStripMenuItem1.Name = "mostrarToolStripMenuItem1";
-            this.mostrarToolStripMenuItem1.Size = new System.Drawing.Size(125, 22);
-            this.mostrarToolStripMenuItem1.Text = "Mostrar";
+            this.ToolStripMenuListaMarca.Image = global::Actividad2.Properties.Resources.list;
+            this.ToolStripMenuListaMarca.Name = "ToolStripMenuListaMarca";
+            this.ToolStripMenuListaMarca.Size = new System.Drawing.Size(180, 22);
+            this.ToolStripMenuListaMarca.Text = "Lista";
+            this.ToolStripMenuListaMarca.Click += new System.EventHandler(this.ToolStripMenuListaMarca_Click);
             // 
             // categoriasToolStripMenuItem
             // 
@@ -118,15 +123,17 @@
             // 
             // nuevoToolStripMenuItem2
             // 
+            this.nuevoToolStripMenuItem2.Image = global::Actividad2.Properties.Resources.plus;
             this.nuevoToolStripMenuItem2.Name = "nuevoToolStripMenuItem2";
-            this.nuevoToolStripMenuItem2.Size = new System.Drawing.Size(125, 22);
+            this.nuevoToolStripMenuItem2.Size = new System.Drawing.Size(109, 22);
             this.nuevoToolStripMenuItem2.Text = "Nuevo";
             // 
             // mostrarToolStripMenuItem2
             // 
+            this.mostrarToolStripMenuItem2.Image = global::Actividad2.Properties.Resources.list;
             this.mostrarToolStripMenuItem2.Name = "mostrarToolStripMenuItem2";
-            this.mostrarToolStripMenuItem2.Size = new System.Drawing.Size(125, 22);
-            this.mostrarToolStripMenuItem2.Text = "Mostrar";
+            this.mostrarToolStripMenuItem2.Size = new System.Drawing.Size(109, 22);
+            this.mostrarToolStripMenuItem2.Text = "Lista";
             // 
             // FormMenuPrincipal
             // 
@@ -158,7 +165,7 @@
         private System.Windows.Forms.ToolStripMenuItem mostrarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem marcasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem nuevoToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem mostrarToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem ToolStripMenuListaMarca;
         private System.Windows.Forms.ToolStripMenuItem categoriasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem nuevoToolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem mostrarToolStripMenuItem2;

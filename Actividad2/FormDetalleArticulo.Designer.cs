@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormDetalleArticulo));
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.PresentacionImagen = new System.Windows.Forms.PictureBox();
             this.lblNombre = new System.Windows.Forms.Label();
             this.lblCodigo = new System.Windows.Forms.Label();
             this.lblDescripcion = new System.Windows.Forms.Label();
@@ -37,19 +37,19 @@
             this.lblCategoria = new System.Windows.Forms.Label();
             this.lblPrecio = new System.Windows.Forms.Label();
             this.listBox1 = new System.Windows.Forms.ListBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PresentacionImagen)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox1
+            // PresentacionImagen
             // 
-            this.pictureBox1.Image = global::Actividad2.Properties.Resources.imagen_de_prueba_320x240_1;
-            this.pictureBox1.Location = new System.Drawing.Point(34, 27);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(265, 227);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.PresentacionImagen.Image = global::Actividad2.Properties.Resources.imagen_de_prueba_320x240_1;
+            this.PresentacionImagen.Location = new System.Drawing.Point(34, 27);
+            this.PresentacionImagen.Name = "PresentacionImagen";
+            this.PresentacionImagen.Size = new System.Drawing.Size(265, 227);
+            this.PresentacionImagen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.PresentacionImagen.TabIndex = 0;
+            this.PresentacionImagen.TabStop = false;
+            this.PresentacionImagen.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // lblNombre
             // 
@@ -129,9 +129,9 @@
             // 
             this.listBox1.FormattingEnabled = true;
             this.listBox1.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3"});
+            "Imagen 1",
+            "Imagen 2",
+            "Imagen 3"});
             this.listBox1.Location = new System.Drawing.Point(34, 263);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(265, 95);
@@ -149,20 +149,20 @@
             this.Controls.Add(this.lblDescripcion);
             this.Controls.Add(this.lblCodigo);
             this.Controls.Add(this.lblNombre);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.PresentacionImagen);
             this.MaximumSize = new System.Drawing.Size(664, 462);
             this.MinimumSize = new System.Drawing.Size(664, 462);
             this.Name = "FormDetalleArticulo";
             this.Text = "FormDetalleArticulo";
             this.Load += new System.EventHandler(this.FormDetalleArticulo_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PresentacionImagen)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox PresentacionImagen;
         private System.Windows.Forms.Label lblNombre;
         private System.Windows.Forms.Label lblCodigo;
         private System.Windows.Forms.Label lblDescripcion;

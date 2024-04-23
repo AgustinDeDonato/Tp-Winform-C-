@@ -37,5 +37,14 @@ namespace Actividad2
         {
 
         }
+
+        private void ToolStripMenuListaMarca_Click(object sender, EventArgs e)
+        {
+            FormListadoMarca VentanaListadoMarca = new FormListadoMarca();
+            VentanaListadoMarca.MdiParent = this;
+            VentanaListadoMarca.Show();
+            VentanaListadoMarca.Dock = DockStyle.Fill;
+            VentanaListadoMarca.TopLevel = false;
+        }
     }
 }

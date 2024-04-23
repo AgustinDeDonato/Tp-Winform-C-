@@ -43,9 +43,9 @@
             this.textBoxPrecio = new System.Windows.Forms.TextBox();
             this.textBoxDescripcion = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.buttonAgregar = new System.Windows.Forms.Button();
             this.buttonCancelar = new System.Windows.Forms.Button();
+            this.buttonAgregar = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -181,6 +181,31 @@
             this.label6.TabIndex = 14;
             this.label6.Text = "Descripcion:";
             // 
+            // buttonCancelar
+            // 
+            this.buttonCancelar.Image = global::Actividad2.Properties.Resources.multiply;
+            this.buttonCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonCancelar.Location = new System.Drawing.Point(439, 362);
+            this.buttonCancelar.Name = "buttonCancelar";
+            this.buttonCancelar.Size = new System.Drawing.Size(80, 32);
+            this.buttonCancelar.TabIndex = 17;
+            this.buttonCancelar.Text = "Cancelar";
+            this.buttonCancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.buttonCancelar.UseVisualStyleBackColor = true;
+            this.buttonCancelar.Click += new System.EventHandler(this.buttonCancelar_Click);
+            // 
+            // buttonAgregar
+            // 
+            this.buttonAgregar.Image = global::Actividad2.Properties.Resources.plus;
+            this.buttonAgregar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonAgregar.Location = new System.Drawing.Point(243, 362);
+            this.buttonAgregar.Name = "buttonAgregar";
+            this.buttonAgregar.Size = new System.Drawing.Size(74, 32);
+            this.buttonAgregar.TabIndex = 16;
+            this.buttonAgregar.Text = "Agregar";
+            this.buttonAgregar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.buttonAgregar.UseVisualStyleBackColor = true;
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Location = new System.Drawing.Point(458, 133);
@@ -188,25 +213,6 @@
             this.pictureBox1.Size = new System.Drawing.Size(190, 178);
             this.pictureBox1.TabIndex = 15;
             this.pictureBox1.TabStop = false;
-            // 
-            // buttonAgregar
-            // 
-            this.buttonAgregar.Location = new System.Drawing.Point(189, 358);
-            this.buttonAgregar.Name = "buttonAgregar";
-            this.buttonAgregar.Size = new System.Drawing.Size(113, 40);
-            this.buttonAgregar.TabIndex = 16;
-            this.buttonAgregar.Text = "Agregar";
-            this.buttonAgregar.UseVisualStyleBackColor = true;
-            // 
-            // buttonCancelar
-            // 
-            this.buttonCancelar.Location = new System.Drawing.Point(498, 358);
-            this.buttonCancelar.Name = "buttonCancelar";
-            this.buttonCancelar.Size = new System.Drawing.Size(113, 40);
-            this.buttonCancelar.TabIndex = 17;
-            this.buttonCancelar.Text = "Cancelar";
-            this.buttonCancelar.UseVisualStyleBackColor = true;
-            this.buttonCancelar.Click += new System.EventHandler(this.buttonCancelar_Click);
             // 
             // FormAgregarArticulo
             // 
