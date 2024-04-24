@@ -51,5 +51,6 @@ namespace Actividad2
         {
             this.Close();
         }
+
     }
 }

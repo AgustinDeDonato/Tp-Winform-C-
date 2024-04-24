@@ -60,11 +60,14 @@
             // 
             // BtnModificarArticulo
             // 
-            this.BtnModificarArticulo.Location = new System.Drawing.Point(485, 24);
+            this.BtnModificarArticulo.Image = global::Actividad2.Properties.Resources.icons8_modificar_16;
+            this.BtnModificarArticulo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnModificarArticulo.Location = new System.Drawing.Point(555, 12);
             this.BtnModificarArticulo.Name = "BtnModificarArticulo";
-            this.BtnModificarArticulo.Size = new System.Drawing.Size(154, 23);
+            this.BtnModificarArticulo.Size = new System.Drawing.Size(77, 37);
             this.BtnModificarArticulo.TabIndex = 18;
-            this.BtnModificarArticulo.Text = "Modificar Articulo";
+            this.BtnModificarArticulo.Text = "Modificar";
+            this.BtnModificarArticulo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnModificarArticulo.UseVisualStyleBackColor = true;
             this.BtnModificarArticulo.Click += new System.EventHandler(this.BtnModificarArticulo_Click);
             // 
@@ -87,11 +90,14 @@
             // 
             // BtnBorrarArticulo
             // 
-            this.BtnBorrarArticulo.Location = new System.Drawing.Point(241, 24);
+            this.BtnBorrarArticulo.Image = global::Actividad2.Properties.Resources.multiply;
+            this.BtnBorrarArticulo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnBorrarArticulo.Location = new System.Drawing.Point(638, 12);
             this.BtnBorrarArticulo.Name = "BtnBorrarArticulo";
-            this.BtnBorrarArticulo.Size = new System.Drawing.Size(132, 23);
+            this.BtnBorrarArticulo.Size = new System.Drawing.Size(66, 37);
             this.BtnBorrarArticulo.TabIndex = 16;
-            this.BtnBorrarArticulo.Text = "Borrar Articulo";
+            this.BtnBorrarArticulo.Text = "Borrar";
+            this.BtnBorrarArticulo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnBorrarArticulo.UseVisualStyleBackColor = true;
             // 
             // label1

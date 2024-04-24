@@ -143,6 +143,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormAgregarMarca";
             this.Text = "FormAgregarMarca";
+            this.Load += new System.EventHandler(this.FormAgregarMarca_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

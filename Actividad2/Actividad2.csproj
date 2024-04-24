@@ -72,6 +72,12 @@
     <Compile Include="FormListadoMarca.Designer.cs">
       <DependentUpon>FormListadoMarca.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormListadoCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormListadoCategoria.Designer.cs">
+      <DependentUpon>FormListadoCategoria.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormMenuPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -108,6 +114,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormDetalleArticulo.resx">
       <DependentUpon>FormDetalleArticulo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormListadoCategoria.resx">
+      <DependentUpon>FormListadoCategoria.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormListadoMarca.resx">
       <DependentUpon>FormListadoMarca.cs</DependentUpon>
@@ -163,6 +172,7 @@
     <None Include="Resources\icons8-atrás-16.png" />
     <None Include="Resources\multiply.png" />
     <None Include="Resources\list.png" />
+    <None Include="Resources\icons8-modificar-16.png" />
     <Content Include="Resources\loupe_79257.png" />
     <Content Include="Resources\plus.png" />
     <None Include="Resources\plus1.png" />

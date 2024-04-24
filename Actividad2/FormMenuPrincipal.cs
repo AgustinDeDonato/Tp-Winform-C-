@@ -41,6 +41,12 @@ namespace Actividad2
 
         private void ToolStripMenuListaMarca_Click(object sender, EventArgs e)
         {
+            foreach (var item in Application.OpenForms)
+            {
+                if (item.GetType() == typeof(FormListadoMarca))
+                    return;
+            }
+
             FormListadoMarca VentanaListadoMarca = new FormListadoMarca();
             VentanaListadoMarca.MdiParent = this;
             VentanaListadoMarca.Show();
@@ -50,6 +56,12 @@ namespace Actividad2
 
         private void mostrarToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            foreach (var item in Application.OpenForms)
+            {
+                if (item.GetType() == typeof(MenuArticulo))
+                    return;
+            }
+
             MenuArticulo menuArticulo = new MenuArticulo();
             menuArticulo.MdiParent = this;
             menuArticulo.Show();
@@ -59,11 +71,32 @@ namespace Actividad2
 
         private void nuevoToolStripMenuItem1_Click(object sender, EventArgs e)
         {
+            foreach (var item in Application.OpenForms)
+            {
+                if (item.GetType() == typeof(FormAgregarMarca))
+                    return;
+            }
+
             FormAgregarMarca VentanaAgregarMarca = new FormAgregarMarca();
             VentanaAgregarMarca.MdiParent = this;
             VentanaAgregarMarca.Show();
             VentanaAgregarMarca.Dock = DockStyle.Fill;
             VentanaAgregarMarca.TopLevel = false;
+        }
+
+        private void mostrarToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            foreach (var item in Application.OpenForms)
+            {
+                if (item.GetType() == typeof(FormListadoCategoria))
+                    return;
+            }
+
+            FormListadoCategoria VentanaListadoCategoria = new FormListadoCategoria();
+            VentanaListadoCategoria.MdiParent = this;
+            VentanaListadoCategoria.Show();
+            VentanaListadoCategoria.Dock = DockStyle.Fill;
+            VentanaListadoCategoria.TopLevel = false;
         }
     }
 }

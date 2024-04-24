@@ -10,19 +10,19 @@ using System.Windows.Forms;
 
 namespace Actividad2
 {
-    public partial class FormAgregarMarca : Form
+    public partial class FormListadoCategoria : Form
     {
-        public FormAgregarMarca()
+        public FormListadoCategoria()
         {
             InitializeComponent();
         }
 
-        private void buttonCancelar_Click(object sender, EventArgs e)
+        private void btnAtrasListaCat_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void FormAgregarMarca_Load(object sender, EventArgs e)
+        private void FormListadoCategoria_Load(object sender, EventArgs e)
         {
 
         }

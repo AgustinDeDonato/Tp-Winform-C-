@@ -31,8 +31,11 @@
             this.txtBusquedaMarca = new System.Windows.Forms.TextBox();
             this.listadoMarcas = new System.Windows.Forms.ListBox();
             this.lblBusquedaMarcas = new System.Windows.Forms.Label();
+            this.btnBorrarMarca = new System.Windows.Forms.Button();
+            this.btnModificarMarca = new System.Windows.Forms.Button();
             this.btnAtrasListaMarca = new System.Windows.Forms.Button();
             this.btnBusqueda = new System.Windows.Forms.Button();
+            this.lblTituloMarca = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtBusquedaMarca
@@ -66,6 +69,30 @@
             this.lblBusquedaMarcas.TabIndex = 2;
             this.lblBusquedaMarcas.Text = "Buscar";
             // 
+            // btnBorrarMarca
+            // 
+            this.btnBorrarMarca.Image = global::Actividad2.Properties.Resources.multiply;
+            this.btnBorrarMarca.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBorrarMarca.Location = new System.Drawing.Point(680, 38);
+            this.btnBorrarMarca.Name = "btnBorrarMarca";
+            this.btnBorrarMarca.Size = new System.Drawing.Size(59, 32);
+            this.btnBorrarMarca.TabIndex = 20;
+            this.btnBorrarMarca.Text = "Borrar";
+            this.btnBorrarMarca.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnBorrarMarca.UseVisualStyleBackColor = true;
+            // 
+            // btnModificarMarca
+            // 
+            this.btnModificarMarca.Image = global::Actividad2.Properties.Resources.icons8_modificar_16;
+            this.btnModificarMarca.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnModificarMarca.Location = new System.Drawing.Point(600, 38);
+            this.btnModificarMarca.Name = "btnModificarMarca";
+            this.btnModificarMarca.Size = new System.Drawing.Size(74, 32);
+            this.btnModificarMarca.TabIndex = 19;
+            this.btnModificarMarca.Text = "Modificar";
+            this.btnModificarMarca.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnModificarMarca.UseVisualStyleBackColor = true;
+            // 
             // btnAtrasListaMarca
             // 
             this.btnAtrasListaMarca.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
@@ -93,12 +120,25 @@
             this.btnBusqueda.UseVisualStyleBackColor = false;
             this.btnBusqueda.Click += new System.EventHandler(this.btnBusqueda_Click);
             // 
+            // lblTituloMarca
+            // 
+            this.lblTituloMarca.AutoSize = true;
+            this.lblTituloMarca.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTituloMarca.Location = new System.Drawing.Point(3, 3);
+            this.lblTituloMarca.Name = "lblTituloMarca";
+            this.lblTituloMarca.Size = new System.Drawing.Size(48, 13);
+            this.lblTituloMarca.TabIndex = 21;
+            this.lblTituloMarca.Text = "Marcas";
+            // 
             // FormListadoMarca
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblTituloMarca);
+            this.Controls.Add(this.btnBorrarMarca);
+            this.Controls.Add(this.btnModificarMarca);
             this.Controls.Add(this.btnAtrasListaMarca);
             this.Controls.Add(this.btnBusqueda);
             this.Controls.Add(this.lblBusquedaMarcas);
@@ -120,5 +160,8 @@
         private System.Windows.Forms.Label lblBusquedaMarcas;
         private System.Windows.Forms.Button btnBusqueda;
         private System.Windows.Forms.Button btnAtrasListaMarca;
+        private System.Windows.Forms.Button btnModificarMarca;
+        private System.Windows.Forms.Button btnBorrarMarca;
+        private System.Windows.Forms.Label lblTituloMarca;
     }
 }
