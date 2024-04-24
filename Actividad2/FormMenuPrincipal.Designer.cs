@@ -77,7 +77,7 @@
             // 
             this.nuevoToolStripMenuItem.Image = global::Actividad2.Properties.Resources.plus;
             this.nuevoToolStripMenuItem.Name = "nuevoToolStripMenuItem";
-            this.nuevoToolStripMenuItem.Size = new System.Drawing.Size(109, 22);
+            this.nuevoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.nuevoToolStripMenuItem.Text = "Nuevo";
             this.nuevoToolStripMenuItem.Click += new System.EventHandler(this.nuevoToolStripMenuItem_Click);
             // 
@@ -85,8 +85,9 @@
             // 
             this.mostrarToolStripMenuItem.Image = global::Actividad2.Properties.Resources.list;
             this.mostrarToolStripMenuItem.Name = "mostrarToolStripMenuItem";
-            this.mostrarToolStripMenuItem.Size = new System.Drawing.Size(109, 22);
+            this.mostrarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.mostrarToolStripMenuItem.Text = "Lista";
+            this.mostrarToolStripMenuItem.Click += new System.EventHandler(this.mostrarToolStripMenuItem_Click);
             // 
             // marcasToolStripMenuItem
             // 
@@ -101,14 +102,14 @@
             // 
             this.nuevoToolStripMenuItem1.Image = global::Actividad2.Properties.Resources.plus;
             this.nuevoToolStripMenuItem1.Name = "nuevoToolStripMenuItem1";
-            this.nuevoToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.nuevoToolStripMenuItem1.Size = new System.Drawing.Size(109, 22);
             this.nuevoToolStripMenuItem1.Text = "Nuevo";
             // 
             // ToolStripMenuListaMarca
             // 
             this.ToolStripMenuListaMarca.Image = global::Actividad2.Properties.Resources.list;
             this.ToolStripMenuListaMarca.Name = "ToolStripMenuListaMarca";
-            this.ToolStripMenuListaMarca.Size = new System.Drawing.Size(180, 22);
+            this.ToolStripMenuListaMarca.Size = new System.Drawing.Size(109, 22);
             this.ToolStripMenuListaMarca.Text = "Lista";
             this.ToolStripMenuListaMarca.Click += new System.EventHandler(this.ToolStripMenuListaMarca_Click);
             // 

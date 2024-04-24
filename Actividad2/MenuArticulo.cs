@@ -15,12 +15,36 @@ namespace Actividad2
         public MenuArticulo()
         {
             InitializeComponent();
+            
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            ///vendria a ser la logica 
-            ///para concatenar la vetana de omar
+        private void BtnBorrarArticulo_Click(object sender, EventArgs e)
+        {    
+            // idea mistica(?
+            // if(event aritucolo seleccion = true) {
+            // }
+            // get list articulo <> 
+            // set estado = false; 
+            // show.msg ("estas seguro?")
+            // logica para borrar el articulo previamente seleccionado 
+
         }
-    }
+        /*
+        private void BtnModificarArticulo_Click(object sender, EventArgs e)
+        {
+
+        }
+        */
+        private void BtnModificarArticulo_Click(object sender, EventArgs e)
+        {
+            foreach (var item in Application.OpenForms)
+            {
+                if (item.GetType() == typeof(FormModificarArticulo))
+                    
+                    return;
+            }
+            FormModificarArticulo modificarArticulo = new FormModificarArticulo();
+            modificarArticulo.Show();
+        }
+}
 }

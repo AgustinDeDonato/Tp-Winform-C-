@@ -15,6 +15,7 @@ namespace Actividad2
         public FormMenuPrincipal()
         {
             InitializeComponent();
+           
         }
 
         private void nuevoToolStripMenuItem_Click(object sender, EventArgs e)
@@ -45,6 +46,15 @@ namespace Actividad2
             VentanaListadoMarca.Show();
             VentanaListadoMarca.Dock = DockStyle.Fill;
             VentanaListadoMarca.TopLevel = false;
+        }
+
+        private void mostrarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MenuArticulo menuArticulo = new MenuArticulo();
+            menuArticulo.MdiParent = this;
+            menuArticulo.Show();
+            menuArticulo.Dock = DockStyle.Fill;
+            menuArticulo.TopLevel = false;
         }
     }
 }

@@ -338,8 +338,10 @@
             this.Controls.Add(this.comboBoxMarca);
             this.Controls.Add(this.labelNombre);
             this.Controls.Add(this.labelTitulo);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "FormModificarArticulo";
+            this.RightToLeftLayout = true;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormModificarArticulo";
             this.Load += new System.EventHandler(this.FormModificarArticulo_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
