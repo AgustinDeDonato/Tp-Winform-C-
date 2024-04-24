@@ -197,6 +197,7 @@
             this.Controls.Add(this.labelTituloCategoria);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "FormModificarCategoria";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormModificarCategoria";
             this.GBoxCategoriaModificar.ResumeLayout(false);
             this.GBoxCategoriaModificar.PerformLayout();

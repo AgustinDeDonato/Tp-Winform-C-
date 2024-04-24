@@ -348,7 +348,7 @@
             this.Name = "FormModificarArticulo";
             this.RightToLeftLayout = true;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FormModificarArticulo";
+            this.Text = "Modificar Articulo";
             this.Load += new System.EventHandler(this.FormModificarArticulo_Load);
             this.groupBoxArticuloModificar.ResumeLayout(false);
             this.groupBoxArticuloModificar.PerformLayout();

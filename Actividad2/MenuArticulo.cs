@@ -44,7 +44,8 @@ namespace Actividad2
                     return;
             }
             FormModificarArticulo modificarArticulo = new FormModificarArticulo();
-            modificarArticulo.Show();
+            //Muestra la ventana y no se va a cerrar hasta que se finalice de usar
+            modificarArticulo.ShowDialog();
         }
 
         private void btnAtrasListaArticulo_Click(object sender, EventArgs e)

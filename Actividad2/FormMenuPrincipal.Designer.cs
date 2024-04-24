@@ -127,14 +127,14 @@
             // 
             this.nuevoToolStripMenuItem2.Image = global::Actividad2.Properties.Resources.plus;
             this.nuevoToolStripMenuItem2.Name = "nuevoToolStripMenuItem2";
-            this.nuevoToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
+            this.nuevoToolStripMenuItem2.Size = new System.Drawing.Size(109, 22);
             this.nuevoToolStripMenuItem2.Text = "Nuevo";
             // 
             // mostrarToolStripMenuItem2
             // 
             this.mostrarToolStripMenuItem2.Image = global::Actividad2.Properties.Resources.list;
             this.mostrarToolStripMenuItem2.Name = "mostrarToolStripMenuItem2";
-            this.mostrarToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
+            this.mostrarToolStripMenuItem2.Size = new System.Drawing.Size(109, 22);
             this.mostrarToolStripMenuItem2.Text = "Lista";
             this.mostrarToolStripMenuItem2.Click += new System.EventHandler(this.mostrarToolStripMenuItem2_Click);
             // 
@@ -147,6 +147,7 @@
             this.Controls.Add(this.menuStrip1);
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
+            this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(800, 600);
             this.MinimumSize = new System.Drawing.Size(800, 600);
             this.Name = "FormMenuPrincipal";

@@ -118,6 +118,7 @@
             this.btnModificarCategoria.Text = "Modificar";
             this.btnModificarCategoria.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnModificarCategoria.UseVisualStyleBackColor = true;
+            this.btnModificarCategoria.Click += new System.EventHandler(this.btnModificarCategoria_Click);
             // 
             // lblTituloCategoria
             // 
