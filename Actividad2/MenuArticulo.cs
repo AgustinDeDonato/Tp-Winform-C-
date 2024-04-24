@@ -46,5 +46,10 @@ namespace Actividad2
             FormModificarArticulo modificarArticulo = new FormModificarArticulo();
             modificarArticulo.Show();
         }
-}
+
+        private void btnAtrasListaArticulo_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+    }
 }

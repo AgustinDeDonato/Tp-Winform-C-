@@ -56,5 +56,14 @@ namespace Actividad2
             menuArticulo.Dock = DockStyle.Fill;
             menuArticulo.TopLevel = false;
         }
+
+        private void nuevoToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            FormAgregarMarca VentanaAgregarMarca = new FormAgregarMarca();
+            VentanaAgregarMarca.MdiParent = this;
+            VentanaAgregarMarca.Show();
+            VentanaAgregarMarca.Dock = DockStyle.Fill;
+            VentanaAgregarMarca.TopLevel = false;
+        }
     }
 }

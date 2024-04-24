@@ -35,6 +35,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.BtnBorrarArticulo = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnAtrasListaArticulo = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // listView1
@@ -92,7 +93,6 @@
             this.BtnBorrarArticulo.TabIndex = 16;
             this.BtnBorrarArticulo.Text = "Borrar Articulo";
             this.BtnBorrarArticulo.UseVisualStyleBackColor = true;
-            this.BtnBorrarArticulo.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
             // 
@@ -105,11 +105,26 @@
             this.label1.TabIndex = 14;
             this.label1.Text = "Ingrese Nombre";
             // 
+            // btnAtrasListaArticulo
+            // 
+            this.btnAtrasListaArticulo.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btnAtrasListaArticulo.Image = global::Actividad2.Properties.Resources.icons8_atrás_161;
+            this.btnAtrasListaArticulo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAtrasListaArticulo.Location = new System.Drawing.Point(27, 393);
+            this.btnAtrasListaArticulo.Name = "btnAtrasListaArticulo";
+            this.btnAtrasListaArticulo.Size = new System.Drawing.Size(59, 32);
+            this.btnAtrasListaArticulo.TabIndex = 19;
+            this.btnAtrasListaArticulo.Text = "Atras";
+            this.btnAtrasListaArticulo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnAtrasListaArticulo.UseVisualStyleBackColor = true;
+            this.btnAtrasListaArticulo.Click += new System.EventHandler(this.btnAtrasListaArticulo_Click);
+            // 
             // MenuArticulo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnAtrasListaArticulo);
             this.Controls.Add(this.BtnModificarArticulo);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label2);
@@ -133,5 +148,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button BtnBorrarArticulo;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnAtrasListaArticulo;
     }
 }

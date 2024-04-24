@@ -29,8 +29,6 @@
         private void InitializeComponent()
         {
             this.buttonCancelar = new System.Windows.Forms.Button();
-            this.buttonAceptar = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
             this.textBoxDescripcion = new System.Windows.Forms.TextBox();
             this.textBoxPrecio = new System.Windows.Forms.TextBox();
@@ -54,36 +52,24 @@
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.groupBoxArticuloModificar = new System.Windows.Forms.GroupBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.buttonAceptar = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBoxArticuloModificar.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // buttonCancelar
             // 
-            this.buttonCancelar.Location = new System.Drawing.Point(591, 358);
+            this.buttonCancelar.Image = global::Actividad2.Properties.Resources.multiply1;
+            this.buttonCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonCancelar.Location = new System.Drawing.Point(615, 358);
             this.buttonCancelar.Name = "buttonCancelar";
-            this.buttonCancelar.Size = new System.Drawing.Size(113, 40);
+            this.buttonCancelar.Size = new System.Drawing.Size(82, 40);
             this.buttonCancelar.TabIndex = 35;
             this.buttonCancelar.Text = "Cancelar";
+            this.buttonCancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.buttonCancelar.UseVisualStyleBackColor = true;
             this.buttonCancelar.Click += new System.EventHandler(this.buttonCancelar_Click);
-            // 
-            // buttonAceptar
-            // 
-            this.buttonAceptar.Location = new System.Drawing.Point(333, 358);
-            this.buttonAceptar.Name = "buttonAceptar";
-            this.buttonAceptar.Size = new System.Drawing.Size(113, 40);
-            this.buttonAceptar.TabIndex = 34;
-            this.buttonAceptar.Text = "Confirmar ";
-            this.buttonAceptar.UseVisualStyleBackColor = true;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(558, 125);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(190, 180);
-            this.pictureBox1.TabIndex = 33;
-            this.pictureBox1.TabStop = false;
             // 
             // label6
             // 
@@ -314,6 +300,26 @@
             this.groupBoxArticuloModificar.TabStop = false;
             this.groupBoxArticuloModificar.Text = "Articulo a modificar";
             // 
+            // buttonAceptar
+            // 
+            this.buttonAceptar.Image = global::Actividad2.Properties.Resources.plus1;
+            this.buttonAceptar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonAceptar.Location = new System.Drawing.Point(333, 358);
+            this.buttonAceptar.Name = "buttonAceptar";
+            this.buttonAceptar.Size = new System.Drawing.Size(82, 40);
+            this.buttonAceptar.TabIndex = 34;
+            this.buttonAceptar.Text = "Confirmar ";
+            this.buttonAceptar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.buttonAceptar.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(558, 125);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(190, 180);
+            this.pictureBox1.TabIndex = 33;
+            this.pictureBox1.TabStop = false;
+            // 
             // FormModificarArticulo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -344,9 +350,9 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormModificarArticulo";
             this.Load += new System.EventHandler(this.FormModificarArticulo_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBoxArticuloModificar.ResumeLayout(false);
             this.groupBoxArticuloModificar.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
