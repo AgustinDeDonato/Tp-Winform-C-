@@ -50,11 +50,20 @@ namespace Actividad2
 
         private void mostrarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MenuArticulo menuArticulo = new MenuArticulo();
+            FormMenuArticulo menuArticulo = new FormMenuArticulo();
             menuArticulo.MdiParent = this;
             menuArticulo.Show();
             menuArticulo.Dock = DockStyle.Fill;
             menuArticulo.TopLevel = false;
+        }
+
+        private void nuevoToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            FormAgregarCategoria VentanaAgregarCategoria = new FormAgregarCategoria();
+            VentanaAgregarCategoria.MdiParent = this;
+            VentanaAgregarCategoria.Show();
+            VentanaAgregarCategoria.Dock = DockStyle.Fill;
+            VentanaAgregarCategoria.TopLevel = false;
         }
     }
 }

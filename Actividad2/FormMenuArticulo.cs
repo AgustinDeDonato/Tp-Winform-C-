@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Actividad2
 {
-    public partial class MenuArticulo : Form
+    public partial class FormMenuArticulo : Form
     {
-        public MenuArticulo()
+        public FormMenuArticulo()
         {
             InitializeComponent();
             
@@ -46,5 +46,34 @@ namespace Actividad2
             FormModificarArticulo modificarArticulo = new FormModificarArticulo();
             modificarArticulo.Show();
         }
-}
+
+        private void btnAtrasMarcaMenuArticulo_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+        // Motor de busqueda para el listbox 
+        // Funcionalidad dormida hasta no tener colleccion de articulos
+        /*
+        private void searchButton_Click(object sender, EventArgs e)
+        {
+            string searchName = searchTextBox.Text.Trim();
+            if (!string.IsNullOrEmpty(searchName))
+            {
+                int index = listView1.FindItemWithText(searchName);
+                if (index != ListBox.NoMatches)
+                {
+                    listView1.SelectedIndices= index;
+                }
+                else
+                {
+                    MessageBox.Show($"Name '{searchName}' not found.");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Please enter a name to search.");
+            }
+        */ 
+        }
+        
 }

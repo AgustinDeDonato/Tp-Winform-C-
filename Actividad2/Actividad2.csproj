@@ -54,6 +54,12 @@
     <Compile Include="FormAgregarArticulo.Designer.cs">
       <DependentUpon>FormAgregarArticulo.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormAgregarCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAgregarCategoria.Designer.cs">
+      <DependentUpon>FormAgregarCategoria.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormDetalleArticulo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,16 +86,19 @@
     </Compile>
     <Compile Include="Imagen.cs" />
     <Compile Include="Marca.cs" />
-    <Compile Include="MenuArticulo.cs">
+    <Compile Include="FormMenuArticulo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MenuArticulo.Designer.cs">
-      <DependentUpon>MenuArticulo.cs</DependentUpon>
+    <Compile Include="FormMenuArticulo.Designer.cs">
+      <DependentUpon>FormMenuArticulo.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FormAgregarArticulo.resx">
       <DependentUpon>FormAgregarArticulo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAgregarCategoria.resx">
+      <DependentUpon>FormAgregarCategoria.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormDetalleArticulo.resx">
       <DependentUpon>FormDetalleArticulo.cs</DependentUpon>
@@ -104,8 +113,8 @@
     <EmbeddedResource Include="FormModificarArticulo.resx">
       <DependentUpon>FormModificarArticulo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MenuArticulo.resx">
-      <DependentUpon>MenuArticulo.cs</DependentUpon>
+    <EmbeddedResource Include="FormMenuArticulo.resx">
+      <DependentUpon>FormMenuArticulo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
