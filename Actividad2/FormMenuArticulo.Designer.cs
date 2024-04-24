@@ -35,8 +35,12 @@
             this.label2 = new System.Windows.Forms.Label();
             this.BtnBorrarArticulo = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+<<<<<<< HEAD:Actividad2/FormMenuArticulo.Designer.cs
             this.btnAtrasMarcaMenuArticulo = new System.Windows.Forms.Button();
             this.searchButton = new System.Windows.Forms.Button();
+=======
+            this.btnAtrasListaArticulo = new System.Windows.Forms.Button();
+>>>>>>> 403964a155cf1b0a4c6706db48a0edc8c0075d28:Actividad2/MenuArticulo.Designer.cs
             this.SuspendLayout();
             // 
             // listView1
@@ -61,11 +65,14 @@
             // 
             // BtnModificarArticulo
             // 
-            this.BtnModificarArticulo.Location = new System.Drawing.Point(485, 24);
+            this.BtnModificarArticulo.Image = global::Actividad2.Properties.Resources.icons8_modificar_16;
+            this.BtnModificarArticulo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnModificarArticulo.Location = new System.Drawing.Point(555, 12);
             this.BtnModificarArticulo.Name = "BtnModificarArticulo";
-            this.BtnModificarArticulo.Size = new System.Drawing.Size(154, 23);
+            this.BtnModificarArticulo.Size = new System.Drawing.Size(77, 37);
             this.BtnModificarArticulo.TabIndex = 18;
-            this.BtnModificarArticulo.Text = "Modificar Articulo";
+            this.BtnModificarArticulo.Text = "Modificar";
+            this.BtnModificarArticulo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnModificarArticulo.UseVisualStyleBackColor = true;
             this.BtnModificarArticulo.Click += new System.EventHandler(this.BtnModificarArticulo_Click);
             // 
@@ -88,11 +95,14 @@
             // 
             // BtnBorrarArticulo
             // 
-            this.BtnBorrarArticulo.Location = new System.Drawing.Point(241, 24);
+            this.BtnBorrarArticulo.Image = global::Actividad2.Properties.Resources.multiply;
+            this.BtnBorrarArticulo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnBorrarArticulo.Location = new System.Drawing.Point(638, 12);
             this.BtnBorrarArticulo.Name = "BtnBorrarArticulo";
-            this.BtnBorrarArticulo.Size = new System.Drawing.Size(132, 23);
+            this.BtnBorrarArticulo.Size = new System.Drawing.Size(66, 37);
             this.BtnBorrarArticulo.TabIndex = 16;
-            this.BtnBorrarArticulo.Text = "Borrar Articulo";
+            this.BtnBorrarArticulo.Text = "Borrar";
+            this.BtnBorrarArticulo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnBorrarArticulo.UseVisualStyleBackColor = true;
             // 
             // label1
@@ -106,6 +116,7 @@
             this.label1.TabIndex = 14;
             this.label1.Text = "Ingrese Nombre";
             // 
+<<<<<<< HEAD:Actividad2/FormMenuArticulo.Designer.cs
             // btnAtrasMarcaMenuArticulo
             // 
             this.btnAtrasMarcaMenuArticulo.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
@@ -133,12 +144,33 @@
             this.searchButton.UseVisualStyleBackColor = false;
             // 
             // FormMenuArticulo
+=======
+            // btnAtrasListaArticulo
+            // 
+            this.btnAtrasListaArticulo.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btnAtrasListaArticulo.Image = global::Actividad2.Properties.Resources.icons8_atrás_161;
+            this.btnAtrasListaArticulo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAtrasListaArticulo.Location = new System.Drawing.Point(27, 393);
+            this.btnAtrasListaArticulo.Name = "btnAtrasListaArticulo";
+            this.btnAtrasListaArticulo.Size = new System.Drawing.Size(59, 32);
+            this.btnAtrasListaArticulo.TabIndex = 19;
+            this.btnAtrasListaArticulo.Text = "Atras";
+            this.btnAtrasListaArticulo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnAtrasListaArticulo.UseVisualStyleBackColor = true;
+            this.btnAtrasListaArticulo.Click += new System.EventHandler(this.btnAtrasListaArticulo_Click);
+            // 
+            // MenuArticulo
+>>>>>>> 403964a155cf1b0a4c6706db48a0edc8c0075d28:Actividad2/MenuArticulo.Designer.cs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+<<<<<<< HEAD:Actividad2/FormMenuArticulo.Designer.cs
             this.Controls.Add(this.searchButton);
             this.Controls.Add(this.btnAtrasMarcaMenuArticulo);
+=======
+            this.Controls.Add(this.btnAtrasListaArticulo);
+>>>>>>> 403964a155cf1b0a4c6706db48a0edc8c0075d28:Actividad2/MenuArticulo.Designer.cs
             this.Controls.Add(this.BtnModificarArticulo);
             this.Controls.Add(this.searchTextBox);
             this.Controls.Add(this.label2);
@@ -162,7 +194,11 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button BtnBorrarArticulo;
         private System.Windows.Forms.Label label1;
+<<<<<<< HEAD:Actividad2/FormMenuArticulo.Designer.cs
         private System.Windows.Forms.Button btnAtrasMarcaMenuArticulo;
         private System.Windows.Forms.Button searchButton;
+=======
+        private System.Windows.Forms.Button btnAtrasListaArticulo;
+>>>>>>> 403964a155cf1b0a4c6706db48a0edc8c0075d28:Actividad2/MenuArticulo.Designer.cs
     }
 }

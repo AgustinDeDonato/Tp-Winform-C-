@@ -95,7 +95,7 @@
             // 
             this.nuevoToolStripMenuItem.Image = global::Actividad2.Properties.Resources.plus;
             this.nuevoToolStripMenuItem.Name = "nuevoToolStripMenuItem";
-            this.nuevoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.nuevoToolStripMenuItem.Size = new System.Drawing.Size(109, 22);
             this.nuevoToolStripMenuItem.Text = "Nuevo";
             this.nuevoToolStripMenuItem.Click += new System.EventHandler(this.nuevoToolStripMenuItem_Click);
             // 
@@ -103,7 +103,7 @@
             // 
             this.mostrarToolStripMenuItem.Image = global::Actividad2.Properties.Resources.list;
             this.mostrarToolStripMenuItem.Name = "mostrarToolStripMenuItem";
-            this.mostrarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.mostrarToolStripMenuItem.Size = new System.Drawing.Size(109, 22);
             this.mostrarToolStripMenuItem.Text = "Lista";
             this.mostrarToolStripMenuItem.Click += new System.EventHandler(this.mostrarToolStripMenuItem_Click);
             // 
@@ -113,6 +113,7 @@
             this.nuevoToolStripMenuItem1.Name = "nuevoToolStripMenuItem1";
             this.nuevoToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.nuevoToolStripMenuItem1.Text = "Nuevo";
+            this.nuevoToolStripMenuItem1.Click += new System.EventHandler(this.nuevoToolStripMenuItem1_Click);
             // 
             // ToolStripMenuListaMarca
             // 
@@ -136,6 +137,7 @@
             this.mostrarToolStripMenuItem2.Name = "mostrarToolStripMenuItem2";
             this.mostrarToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
             this.mostrarToolStripMenuItem2.Text = "Lista";
+            this.mostrarToolStripMenuItem2.Click += new System.EventHandler(this.mostrarToolStripMenuItem2_Click);
             // 
             // FormMenuPrincipal
             // 
@@ -146,6 +148,7 @@
             this.Controls.Add(this.menuStrip1);
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
+            this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(800, 600);
             this.MinimumSize = new System.Drawing.Size(800, 600);
             this.Name = "FormMenuPrincipal";

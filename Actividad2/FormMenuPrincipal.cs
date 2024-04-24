@@ -41,6 +41,12 @@ namespace Actividad2
 
         private void ToolStripMenuListaMarca_Click(object sender, EventArgs e)
         {
+            foreach (var item in Application.OpenForms)
+            {
+                if (item.GetType() == typeof(FormListadoMarca))
+                    return;
+            }
+
             FormListadoMarca VentanaListadoMarca = new FormListadoMarca();
             VentanaListadoMarca.MdiParent = this;
             VentanaListadoMarca.Show();
@@ -50,13 +56,24 @@ namespace Actividad2
 
         private void mostrarToolStripMenuItem_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             FormMenuArticulo menuArticulo = new FormMenuArticulo();
+=======
+            foreach (var item in Application.OpenForms)
+            {
+                if (item.GetType() == typeof(MenuArticulo))
+                    return;
+            }
+
+            MenuArticulo menuArticulo = new MenuArticulo();
+>>>>>>> 403964a155cf1b0a4c6706db48a0edc8c0075d28
             menuArticulo.MdiParent = this;
             menuArticulo.Show();
             menuArticulo.Dock = DockStyle.Fill;
             menuArticulo.TopLevel = false;
         }
 
+<<<<<<< HEAD
         private void nuevoToolStripMenuItem2_Click(object sender, EventArgs e)
         {
             FormAgregarCategoria VentanaAgregarCategoria = new FormAgregarCategoria();
@@ -64,6 +81,36 @@ namespace Actividad2
             VentanaAgregarCategoria.Show();
             VentanaAgregarCategoria.Dock = DockStyle.Fill;
             VentanaAgregarCategoria.TopLevel = false;
+=======
+        private void nuevoToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            foreach (var item in Application.OpenForms)
+            {
+                if (item.GetType() == typeof(FormAgregarMarca))
+                    return;
+            }
+
+            FormAgregarMarca VentanaAgregarMarca = new FormAgregarMarca();
+            VentanaAgregarMarca.MdiParent = this;
+            VentanaAgregarMarca.Show();
+            VentanaAgregarMarca.Dock = DockStyle.Fill;
+            VentanaAgregarMarca.TopLevel = false;
+        }
+
+        private void mostrarToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            foreach (var item in Application.OpenForms)
+            {
+                if (item.GetType() == typeof(FormListadoCategoria))
+                    return;
+            }
+
+            FormListadoCategoria VentanaListadoCategoria = new FormListadoCategoria();
+            VentanaListadoCategoria.MdiParent = this;
+            VentanaListadoCategoria.Show();
+            VentanaListadoCategoria.Dock = DockStyle.Fill;
+            VentanaListadoCategoria.TopLevel = false;
+>>>>>>> 403964a155cf1b0a4c6706db48a0edc8c0075d28
         }
     }
 }
