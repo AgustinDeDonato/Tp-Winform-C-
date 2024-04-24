@@ -15,6 +15,6 @@ namespace Actividad2
         public Categoria categoria { get; set; }
         public List<Imagen> imagen { get; set; }
         public double precio {  get; set; }
-        public   bool estado { get; set; }
+        //public   bool estado { get; set; }
     }
 }
