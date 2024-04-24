@@ -48,7 +48,6 @@ namespace Actividad2
             modificarArticulo.ShowDialog();
         }
 
-<<<<<<< HEAD:Actividad2/FormMenuArticulo.cs
         private void btnAtrasMarcaMenuArticulo_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -78,12 +77,6 @@ namespace Actividad2
         */ 
         }
         
-=======
-        private void btnAtrasListaArticulo_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
+     
 
     }
->>>>>>> 403964a155cf1b0a4c6706db48a0edc8c0075d28:Actividad2/MenuArticulo.cs
-}
