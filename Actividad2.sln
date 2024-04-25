@@ -6,11 +6,6 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Actividad2", "Actividad2\Actividad2.csproj", "{26A43869-F2C2-45FD-A768-E4FC38F65503}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Elementos de la solución", "Elementos de la solución", "{025B0D84-4A9A-4C51-9A79-A135011F7689}"
-	ProjectSection(SolutionItems) = preProject
-		..\Desktop\FormAgregarCategoria.cs = ..\Desktop\FormAgregarCategoria.cs
-		..\Desktop\FormAgregarCategoria.Designer.cs = ..\Desktop\FormAgregarCategoria.Designer.cs
-		..\Desktop\FormAgregarCategoria.resx = ..\Desktop\FormAgregarCategoria.resx
-	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

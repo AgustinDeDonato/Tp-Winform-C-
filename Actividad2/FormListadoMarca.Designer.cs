@@ -31,11 +31,11 @@
             this.txtBusquedaMarca = new System.Windows.Forms.TextBox();
             this.listadoMarcas = new System.Windows.Forms.ListBox();
             this.lblBusquedaMarcas = new System.Windows.Forms.Label();
+            this.lblTituloMarca = new System.Windows.Forms.Label();
             this.btnBorrarMarca = new System.Windows.Forms.Button();
             this.btnModificarMarca = new System.Windows.Forms.Button();
             this.btnAtrasListaMarca = new System.Windows.Forms.Button();
             this.btnBusqueda = new System.Windows.Forms.Button();
-            this.lblTituloMarca = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtBusquedaMarca
@@ -69,6 +69,16 @@
             this.lblBusquedaMarcas.TabIndex = 2;
             this.lblBusquedaMarcas.Text = "Buscar";
             // 
+            // lblTituloMarca
+            // 
+            this.lblTituloMarca.AutoSize = true;
+            this.lblTituloMarca.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTituloMarca.Location = new System.Drawing.Point(3, 3);
+            this.lblTituloMarca.Name = "lblTituloMarca";
+            this.lblTituloMarca.Size = new System.Drawing.Size(48, 13);
+            this.lblTituloMarca.TabIndex = 21;
+            this.lblTituloMarca.Text = "Marcas";
+            // 
             // btnBorrarMarca
             // 
             this.btnBorrarMarca.Image = global::Actividad2.Properties.Resources.multiply;
@@ -80,6 +90,7 @@
             this.btnBorrarMarca.Text = "Borrar";
             this.btnBorrarMarca.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnBorrarMarca.UseVisualStyleBackColor = true;
+            this.btnBorrarMarca.Click += new System.EventHandler(this.btnBorrarMarca_Click);
             // 
             // btnModificarMarca
             // 
@@ -119,16 +130,6 @@
             this.btnBusqueda.TabIndex = 3;
             this.btnBusqueda.UseVisualStyleBackColor = false;
             this.btnBusqueda.Click += new System.EventHandler(this.btnBusqueda_Click);
-            // 
-            // lblTituloMarca
-            // 
-            this.lblTituloMarca.AutoSize = true;
-            this.lblTituloMarca.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTituloMarca.Location = new System.Drawing.Point(3, 3);
-            this.lblTituloMarca.Name = "lblTituloMarca";
-            this.lblTituloMarca.Size = new System.Drawing.Size(48, 13);
-            this.lblTituloMarca.TabIndex = 21;
-            this.lblTituloMarca.Text = "Marcas";
             // 
             // FormListadoMarca
             // 

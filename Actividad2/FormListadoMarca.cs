@@ -32,5 +32,18 @@ namespace Actividad2
             this.Close();
         }
 
+        private void btnBorrarMarca_Click(object sender, EventArgs e)
+        {
+            //Llamado ventana Eliminar Marca
+            foreach (var item in Application.OpenForms)
+            {
+                if (item.GetType() == typeof(FormEliminarMarca))
+
+                    return;
+            }
+            FormEliminarMarca eliminarMarca = new FormEliminarMarca();
+            
+            eliminarMarca.ShowDialog();
+        }
     }
 }

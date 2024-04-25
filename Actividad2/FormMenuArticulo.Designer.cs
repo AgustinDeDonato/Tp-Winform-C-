@@ -102,6 +102,7 @@ namespace Actividad2
             this.BtnBorrarArticulo.Text = "Borrar";
             this.BtnBorrarArticulo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnBorrarArticulo.UseVisualStyleBackColor = true;
+            this.BtnBorrarArticulo.Click += new System.EventHandler(this.BtnBorrarArticulo_Click_1);
             // 
             // label1
             // 

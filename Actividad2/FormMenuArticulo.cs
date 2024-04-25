@@ -52,6 +52,20 @@ namespace Actividad2
         {
             this.Close();
         }
+
+        private void BtnBorrarArticulo_Click_1(object sender, EventArgs e)
+        {
+            //Llamado ventana Eliminar Articulo
+            foreach (var item in Application.OpenForms)
+            {
+                if (item.GetType() == typeof(FormEliminarArticulo))
+
+                    return;
+            }
+            FormEliminarArticulo eliminarArticulo = new FormEliminarArticulo();
+
+            eliminarArticulo.ShowDialog();
+        }
         // Motor de busqueda para el listbox 
         // Funcionalidad dormida hasta no tener colleccion de articulos
         /*
@@ -74,8 +88,8 @@ namespace Actividad2
             {
                 MessageBox.Show("Please enter a name to search.");
             }
-        */ 
-        }
+        */
+    }
         
      
 
