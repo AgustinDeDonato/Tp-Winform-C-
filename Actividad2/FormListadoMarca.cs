@@ -45,5 +45,10 @@ namespace Actividad2
             
             eliminarMarca.ShowDialog();
         }
+
+        private void btnModificarMarca_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

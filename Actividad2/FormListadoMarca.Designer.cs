@@ -103,6 +103,7 @@
             this.btnModificarMarca.Text = "Modificar";
             this.btnModificarMarca.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnModificarMarca.UseVisualStyleBackColor = true;
+            this.btnModificarMarca.Click += new System.EventHandler(this.btnModificarMarca_Click);
             // 
             // btnAtrasListaMarca
             // 
