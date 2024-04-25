@@ -39,5 +39,23 @@ namespace Actividad2
             //Muestra la ventana y no se va a cerrar hasta que se finalice de usar
             modificarCategoria.ShowDialog();
         }
+
+        private void btnBorrarCategoria_Click(object sender, EventArgs e)
+        {
+            //int indice = listadoCategorias.SelectedIndex;
+            //if (indice == -1)
+            //{
+            //    listadoCategorias.Items.RemoveAt(indice);
+            //}
+            foreach(var item in Application.OpenForms)
+            {
+                if(item.GetType() == typeof(FormEliminarCategoria))
+                {
+                    return;
+                }
+            }
+            FormEliminarCategoria formEliminarCategoria = new FormEliminarCategoria();
+            formEliminarCategoria.Show();
+        }
     }
 }

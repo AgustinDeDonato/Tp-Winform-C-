@@ -106,6 +106,7 @@
             this.btnBorrarCategoria.Text = "Borrar";
             this.btnBorrarCategoria.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnBorrarCategoria.UseVisualStyleBackColor = true;
+            this.btnBorrarCategoria.Click += new System.EventHandler(this.btnBorrarCategoria_Click);
             // 
             // btnModificarCategoria
             // 
