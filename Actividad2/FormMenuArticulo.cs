@@ -66,6 +66,21 @@ namespace Actividad2
 
             eliminarArticulo.ShowDialog();
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            //Llamado Ventana BusquedaAvanzada
+            foreach (var item in Application.OpenForms)
+            {
+                if (item.GetType() == typeof(FormBusquedaAvanzada))
+
+                    return;
+            }
+
+            FormBusquedaAvanzada busquedaAvanzada = new FormBusquedaAvanzada();
+            busquedaAvanzada.ShowDialog();
+
+        }
         // Motor de busqueda para el listbox 
         // Funcionalidad dormida hasta no tener colleccion de articulos
         /*
