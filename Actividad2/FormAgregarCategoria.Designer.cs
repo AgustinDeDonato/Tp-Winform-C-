@@ -34,8 +34,6 @@
             this.textBoxDescripcion = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.textBoxCodigo = new System.Windows.Forms.TextBox();
-            this.textBoxNombre = new System.Windows.Forms.TextBox();
-            this.labelNombre = new System.Windows.Forms.Label();
             this.labelTituloMarca = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -68,7 +66,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(282, 258);
+            this.label6.Location = new System.Drawing.Point(298, 221);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(82, 16);
             this.label6.TabIndex = 42;
@@ -76,7 +74,7 @@
             // 
             // textBoxDescripcion
             // 
-            this.textBoxDescripcion.Location = new System.Drawing.Point(368, 257);
+            this.textBoxDescripcion.Location = new System.Drawing.Point(384, 220);
             this.textBoxDescripcion.Name = "textBoxDescripcion";
             this.textBoxDescripcion.Size = new System.Drawing.Size(121, 20);
             this.textBoxDescripcion.TabIndex = 41;
@@ -85,7 +83,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(282, 199);
+            this.label1.Location = new System.Drawing.Point(298, 162);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(23, 16);
             this.label1.TabIndex = 40;
@@ -93,27 +91,10 @@
             // 
             // textBoxCodigo
             // 
-            this.textBoxCodigo.Location = new System.Drawing.Point(368, 198);
+            this.textBoxCodigo.Location = new System.Drawing.Point(384, 161);
             this.textBoxCodigo.Name = "textBoxCodigo";
             this.textBoxCodigo.Size = new System.Drawing.Size(121, 20);
             this.textBoxCodigo.TabIndex = 39;
-            // 
-            // textBoxNombre
-            // 
-            this.textBoxNombre.Location = new System.Drawing.Point(368, 142);
-            this.textBoxNombre.Name = "textBoxNombre";
-            this.textBoxNombre.Size = new System.Drawing.Size(121, 20);
-            this.textBoxNombre.TabIndex = 38;
-            // 
-            // labelNombre
-            // 
-            this.labelNombre.AutoSize = true;
-            this.labelNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelNombre.Location = new System.Drawing.Point(282, 143);
-            this.labelNombre.Name = "labelNombre";
-            this.labelNombre.Size = new System.Drawing.Size(59, 16);
-            this.labelNombre.TabIndex = 37;
-            this.labelNombre.Text = "Nombre:";
             // 
             // labelTituloMarca
             // 
@@ -137,8 +118,6 @@
             this.Controls.Add(this.textBoxDescripcion);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBoxCodigo);
-            this.Controls.Add(this.textBoxNombre);
-            this.Controls.Add(this.labelNombre);
             this.Controls.Add(this.labelTituloMarca);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormAgregarCategoria";
@@ -156,8 +135,6 @@
         private System.Windows.Forms.TextBox textBoxDescripcion;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBoxCodigo;
-        private System.Windows.Forms.TextBox textBoxNombre;
-        private System.Windows.Forms.Label labelNombre;
         private System.Windows.Forms.Label labelTituloMarca;
     }
 }

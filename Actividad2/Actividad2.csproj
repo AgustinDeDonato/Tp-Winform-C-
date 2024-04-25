@@ -126,6 +126,12 @@
     <Compile Include="FormModificarCategoria.Designer.cs">
       <DependentUpon>FormModificarCategoria.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormModificarMarca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormModificarMarca.Designer.cs">
+      <DependentUpon>FormModificarMarca.cs</DependentUpon>
+    </Compile>
     <Compile Include="Imagen.cs" />
     <Compile Include="Marca.cs" />
     <Compile Include="FormMenuArticulo.cs">
@@ -136,6 +142,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormAgregarMarca.resx">
+      <DependentUpon>FormAgregarMarca.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormBusquedaAvanzada.resx">
       <DependentUpon>FormBusquedaAvanzada.cs</DependentUpon>
     </EmbeddedResource>
@@ -175,6 +184,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormModificarCategoria.resx">
       <DependentUpon>FormModificarCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormModificarMarca.resx">
+      <DependentUpon>FormModificarMarca.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

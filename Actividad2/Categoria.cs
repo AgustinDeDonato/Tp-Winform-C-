@@ -8,7 +8,6 @@ namespace Actividad2
 {
     class Categoria
     {
-        public string nombreCategoria { get; set; }
         public int Id { get; set; }
         public  string Descripcion { get; set; }
     }

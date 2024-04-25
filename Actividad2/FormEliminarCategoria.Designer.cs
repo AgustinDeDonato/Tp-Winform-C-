@@ -33,8 +33,8 @@
             this.lblId = new System.Windows.Forms.Label();
             this.lblDescripcion = new System.Windows.Forms.Label();
             this.lblDescripcionCategoria = new System.Windows.Forms.Label();
-            this.btnConfirmar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
+            this.btnConfirmar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblTitulo
@@ -42,7 +42,7 @@
             this.lblTitulo.AutoEllipsis = true;
             this.lblTitulo.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitulo.Location = new System.Drawing.Point(262, 33);
+            this.lblTitulo.Location = new System.Drawing.Point(281, 51);
             this.lblTitulo.Name = "lblTitulo";
             this.lblTitulo.Size = new System.Drawing.Size(197, 27);
             this.lblTitulo.TabIndex = 47;
@@ -52,7 +52,7 @@
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(383, 106);
+            this.comboBox1.Location = new System.Drawing.Point(378, 135);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 21);
             this.comboBox1.TabIndex = 48;
@@ -60,7 +60,7 @@
             // lblId
             // 
             this.lblId.AutoSize = true;
-            this.lblId.Location = new System.Drawing.Point(268, 109);
+            this.lblId.Location = new System.Drawing.Point(263, 138);
             this.lblId.Name = "lblId";
             this.lblId.Size = new System.Drawing.Size(66, 13);
             this.lblId.TabIndex = 49;
@@ -69,7 +69,7 @@
             // lblDescripcion
             // 
             this.lblDescripcion.AutoSize = true;
-            this.lblDescripcion.Location = new System.Drawing.Point(268, 160);
+            this.lblDescripcion.Location = new System.Drawing.Point(263, 189);
             this.lblDescripcion.Name = "lblDescripcion";
             this.lblDescripcion.Size = new System.Drawing.Size(63, 13);
             this.lblDescripcion.TabIndex = 51;
@@ -80,30 +80,36 @@
             this.lblDescripcionCategoria.AutoSize = true;
             this.lblDescripcionCategoria.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblDescripcionCategoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDescripcionCategoria.Location = new System.Drawing.Point(383, 160);
+            this.lblDescripcionCategoria.Location = new System.Drawing.Point(378, 189);
             this.lblDescripcionCategoria.Name = "lblDescripcionCategoria";
             this.lblDescripcionCategoria.Size = new System.Drawing.Size(129, 13);
             this.lblDescripcionCategoria.TabIndex = 52;
             this.lblDescripcionCategoria.Text = "aca va la descripcion";
             // 
-            // btnConfirmar
-            // 
-            this.btnConfirmar.Location = new System.Drawing.Point(228, 272);
-            this.btnConfirmar.Name = "btnConfirmar";
-            this.btnConfirmar.Size = new System.Drawing.Size(149, 23);
-            this.btnConfirmar.TabIndex = 53;
-            this.btnConfirmar.Text = "Confirmar Eliminacion";
-            this.btnConfirmar.UseVisualStyleBackColor = true;
-            // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(386, 272);
+            this.btnCancelar.Image = global::Actividad2.Properties.Resources.icons8_atrás_161;
+            this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCancelar.Location = new System.Drawing.Point(42, 392);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(149, 23);
+            this.btnCancelar.Size = new System.Drawing.Size(57, 27);
             this.btnCancelar.TabIndex = 54;
-            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.Text = "Atras";
+            this.btnCancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCancelar.UseVisualStyleBackColor = true;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
+            // 
+            // btnConfirmar
+            // 
+            this.btnConfirmar.Image = global::Actividad2.Properties.Resources.multiply;
+            this.btnConfirmar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnConfirmar.Location = new System.Drawing.Point(341, 259);
+            this.btnConfirmar.Name = "btnConfirmar";
+            this.btnConfirmar.Size = new System.Drawing.Size(74, 29);
+            this.btnConfirmar.TabIndex = 53;
+            this.btnConfirmar.Text = "Eliminar";
+            this.btnConfirmar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnConfirmar.UseVisualStyleBackColor = true;
             // 
             // FormEliminarCategoria
             // 
@@ -117,9 +123,10 @@
             this.Controls.Add(this.lblId);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.lblTitulo);
+            this.MaximizeBox = false;
             this.Name = "FormEliminarCategoria";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FormEliminarCategoria";
+            this.Text = "Eliminar categoria";
             this.Load += new System.EventHandler(this.FormEliminarCategoria_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

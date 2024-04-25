@@ -36,14 +36,14 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.btnAtrasListaMarca = new System.Windows.Forms.Button();
             this.labelTituloMarca = new System.Windows.Forms.Label();
+            this.btnAtrasListaMarca = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(306, 104);
+            this.comboBox1.Location = new System.Drawing.Point(354, 123);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 21);
             this.comboBox1.TabIndex = 0;
@@ -51,7 +51,7 @@
             // comboBox2
             // 
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(306, 158);
+            this.comboBox2.Location = new System.Drawing.Point(354, 177);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(121, 21);
             this.comboBox2.TabIndex = 1;
@@ -60,7 +60,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(216, 159);
+            this.label1.Location = new System.Drawing.Point(264, 178);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(69, 16);
             this.label1.TabIndex = 27;
@@ -70,7 +70,7 @@
             // 
             this.labelNombre.AutoSize = true;
             this.labelNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelNombre.Location = new System.Drawing.Point(216, 109);
+            this.labelNombre.Location = new System.Drawing.Point(264, 128);
             this.labelNombre.Name = "labelNombre";
             this.labelNombre.Size = new System.Drawing.Size(48, 16);
             this.labelNombre.TabIndex = 26;
@@ -78,14 +78,14 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(239, 209);
+            this.textBox1.Location = new System.Drawing.Point(287, 228);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 28;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(403, 209);
+            this.textBox2.Location = new System.Drawing.Point(451, 228);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(100, 20);
             this.textBox2.TabIndex = 29;
@@ -94,7 +94,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(192, 213);
+            this.label2.Location = new System.Drawing.Point(240, 232);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(31, 16);
             this.label2.TabIndex = 30;
@@ -104,36 +104,36 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(362, 213);
+            this.label3.Location = new System.Drawing.Point(410, 232);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(35, 16);
             this.label3.TabIndex = 31;
             this.label3.Text = "Max:";
-            // 
-            // btnAtrasListaMarca
-            // 
-            this.btnAtrasListaMarca.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.btnAtrasListaMarca.Image = global::Actividad2.Properties.Resources.icons8_atrás_161;
-            this.btnAtrasListaMarca.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAtrasListaMarca.Location = new System.Drawing.Point(682, 393);
-            this.btnAtrasListaMarca.Name = "btnAtrasListaMarca";
-            this.btnAtrasListaMarca.Size = new System.Drawing.Size(59, 32);
-            this.btnAtrasListaMarca.TabIndex = 49;
-            this.btnAtrasListaMarca.Text = "Atras";
-            this.btnAtrasListaMarca.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnAtrasListaMarca.UseVisualStyleBackColor = true;
-            this.btnAtrasListaMarca.Click += new System.EventHandler(this.btnAtrasListaMarca_Click);
             // 
             // labelTituloMarca
             // 
             this.labelTituloMarca.AutoSize = true;
             this.labelTituloMarca.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.labelTituloMarca.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTituloMarca.Location = new System.Drawing.Point(255, 42);
+            this.labelTituloMarca.Location = new System.Drawing.Point(303, 61);
             this.labelTituloMarca.Name = "labelTituloMarca";
             this.labelTituloMarca.Size = new System.Drawing.Size(213, 27);
             this.labelTituloMarca.TabIndex = 50;
             this.labelTituloMarca.Text = "Busqueda Avanzada";
+            // 
+            // btnAtrasListaMarca
+            // 
+            this.btnAtrasListaMarca.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btnAtrasListaMarca.Image = global::Actividad2.Properties.Resources.icons8_atrás_161;
+            this.btnAtrasListaMarca.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAtrasListaMarca.Location = new System.Drawing.Point(37, 392);
+            this.btnAtrasListaMarca.Name = "btnAtrasListaMarca";
+            this.btnAtrasListaMarca.Size = new System.Drawing.Size(62, 32);
+            this.btnAtrasListaMarca.TabIndex = 49;
+            this.btnAtrasListaMarca.Text = "Atras";
+            this.btnAtrasListaMarca.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnAtrasListaMarca.UseVisualStyleBackColor = true;
+            this.btnAtrasListaMarca.Click += new System.EventHandler(this.btnAtrasListaMarca_Click);
             // 
             // FormBusquedaAvanzada
             // 
@@ -150,10 +150,11 @@
             this.Controls.Add(this.labelNombre);
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.comboBox1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "FormBusquedaAvanzada";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FormBusquedaAvanzada";
+            this.Text = "Busqueda avanzada";
             this.ResumeLayout(false);
             this.PerformLayout();
 
