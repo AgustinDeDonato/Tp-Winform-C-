@@ -36,6 +36,8 @@
             this.btnBorrarCategoria = new System.Windows.Forms.Button();
             this.btnModificarCategoria = new System.Windows.Forms.Button();
             this.lblTituloCategoria = new System.Windows.Forms.Label();
+            this.dataGridViewCategorias = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCategorias)).BeginInit();
             this.SuspendLayout();
             // 
             // lblBusquedaCategorias
@@ -131,11 +133,20 @@
             this.lblTituloCategoria.TabIndex = 26;
             this.lblTituloCategoria.Text = "Categorias";
             // 
+            // dataGridViewCategorias
+            // 
+            this.dataGridViewCategorias.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewCategorias.Location = new System.Drawing.Point(53, 114);
+            this.dataGridViewCategorias.Name = "dataGridViewCategorias";
+            this.dataGridViewCategorias.Size = new System.Drawing.Size(698, 259);
+            this.dataGridViewCategorias.TabIndex = 27;
+            // 
             // FormListadoCategoria
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.dataGridViewCategorias);
             this.Controls.Add(this.lblTituloCategoria);
             this.Controls.Add(this.btnBorrarCategoria);
             this.Controls.Add(this.btnModificarCategoria);
@@ -148,6 +159,7 @@
             this.Name = "FormListadoCategoria";
             this.Text = "FormListarCategoria";
             this.Load += new System.EventHandler(this.FormListadoCategoria_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCategorias)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -163,5 +175,6 @@
         private System.Windows.Forms.Button btnBorrarCategoria;
         private System.Windows.Forms.Button btnModificarCategoria;
         private System.Windows.Forms.Label lblTituloCategoria;
+        private System.Windows.Forms.DataGridView dataGridViewCategorias;
     }
 }

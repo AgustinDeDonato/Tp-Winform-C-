@@ -39,6 +39,8 @@ namespace Actividad2
             this.btnAtrasMarcaMenuArticulo = new System.Windows.Forms.Button();
             this.BtnModificarArticulo = new System.Windows.Forms.Button();
             this.BtnBorrarArticulo = new System.Windows.Forms.Button();
+            this.dataGridViewArticulos = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewArticulos)).BeginInit();
             this.SuspendLayout();
             // 
             // listView1
@@ -142,11 +144,20 @@ namespace Actividad2
             this.BtnBorrarArticulo.UseVisualStyleBackColor = true;
             this.BtnBorrarArticulo.Click += new System.EventHandler(this.BtnBorrarArticulo_Click_1);
             // 
+            // dataGridViewArticulos
+            // 
+            this.dataGridViewArticulos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewArticulos.Location = new System.Drawing.Point(115, 129);
+            this.dataGridViewArticulos.Name = "dataGridViewArticulos";
+            this.dataGridViewArticulos.Size = new System.Drawing.Size(574, 296);
+            this.dataGridViewArticulos.TabIndex = 21;
+            // 
             // FormMenuArticulo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.dataGridViewArticulos);
             this.Controls.Add(this.searchButton);
             this.Controls.Add(this.btnAtrasMarcaMenuArticulo);
             this.Controls.Add(this.BtnModificarArticulo);
@@ -158,6 +169,8 @@ namespace Actividad2
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormMenuArticulo";
             this.Text = "MenuArticulo";
+            this.Load += new System.EventHandler(this.FormMenuArticulo_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewArticulos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -179,5 +192,6 @@ namespace Actividad2
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnAtrasMarcaMenuArticulo;
         private System.Windows.Forms.Button searchButton;
+        private System.Windows.Forms.DataGridView dataGridViewArticulos;
     }
 }

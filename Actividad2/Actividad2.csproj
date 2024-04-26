@@ -47,7 +47,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Articulo.cs" />
+    <Compile Include="ArticuloNegocio.cs" />
     <Compile Include="Categoria.cs" />
+    <Compile Include="CategoriaNegocio.cs" />
     <Compile Include="FormBusquedaAvanzada.cs">
       <SubType>Form</SubType>
     </Compile>

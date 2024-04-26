@@ -24,7 +24,8 @@ namespace Actividad2
 
         private void FormListadoCategoria_Load(object sender, EventArgs e)
         {
-
+            CategoriaNegocio negocio = new CategoriaNegocio();
+            dataGridViewCategorias.DataSource = negocio.listar();
         }
 
         private void btnModificarCategoria_Click(object sender, EventArgs e)

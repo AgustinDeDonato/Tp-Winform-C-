@@ -81,6 +81,12 @@ namespace Actividad2
             busquedaAvanzada.ShowDialog();
 
         }
+
+        private void FormMenuArticulo_Load(object sender, EventArgs e)
+        {
+            ArticuloNegocio negocio = new ArticuloNegocio();
+            dataGridViewArticulos.DataSource = negocio.listar();
+        }
         // Motor de busqueda para el listbox 
         // Funcionalidad dormida hasta no tener colleccion de articulos
         /*
