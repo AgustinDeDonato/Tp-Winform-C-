@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.lblBusquedaCategorias = new System.Windows.Forms.Label();
-            this.listadoCategorias = new System.Windows.Forms.ListBox();
             this.txtBusquedaCategorias = new System.Windows.Forms.TextBox();
             this.btnAtrasListaCat = new System.Windows.Forms.Button();
             this.btnBusquedaCat = new System.Windows.Forms.Button();
@@ -49,17 +48,6 @@
             this.lblBusquedaCategorias.Size = new System.Drawing.Size(40, 13);
             this.lblBusquedaCategorias.TabIndex = 21;
             this.lblBusquedaCategorias.Text = "Buscar";
-            // 
-            // listadoCategorias
-            // 
-            this.listadoCategorias.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.listadoCategorias.FormattingEnabled = true;
-            this.listadoCategorias.Location = new System.Drawing.Point(53, 70);
-            this.listadoCategorias.Name = "listadoCategorias";
-            this.listadoCategorias.Size = new System.Drawing.Size(698, 303);
-            this.listadoCategorias.TabIndex = 20;
             // 
             // txtBusquedaCategorias
             // 
@@ -135,8 +123,9 @@
             // 
             // dataGridViewCategorias
             // 
+            this.dataGridViewCategorias.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridViewCategorias.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewCategorias.Location = new System.Drawing.Point(53, 114);
+            this.dataGridViewCategorias.Location = new System.Drawing.Point(53, 93);
             this.dataGridViewCategorias.Name = "dataGridViewCategorias";
             this.dataGridViewCategorias.Size = new System.Drawing.Size(698, 259);
             this.dataGridViewCategorias.TabIndex = 27;
@@ -153,7 +142,6 @@
             this.Controls.Add(this.btnAtrasListaCat);
             this.Controls.Add(this.btnBusquedaCat);
             this.Controls.Add(this.lblBusquedaCategorias);
-            this.Controls.Add(this.listadoCategorias);
             this.Controls.Add(this.txtBusquedaCategorias);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormListadoCategoria";
@@ -170,7 +158,6 @@
         private System.Windows.Forms.Button btnAtrasListaCat;
         private System.Windows.Forms.Button btnBusquedaCat;
         private System.Windows.Forms.Label lblBusquedaCategorias;
-        private System.Windows.Forms.ListBox listadoCategorias;
         private System.Windows.Forms.TextBox txtBusquedaCategorias;
         private System.Windows.Forms.Button btnBorrarCategoria;
         private System.Windows.Forms.Button btnModificarCategoria;

@@ -142,6 +142,7 @@
     <Compile Include="FormMenuArticulo.Designer.cs">
       <DependentUpon>FormMenuArticulo.cs</DependentUpon>
     </Compile>
+    <Compile Include="MarcaNegocio.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FormAgregarMarca.resx">

@@ -30,8 +30,6 @@ namespace Actividad2
         /// </summary>
         private void InitializeComponent()
         {
-            this.listView1 = new System.Windows.Forms.ListView();
-            this.DETALLES = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.searchTextBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -40,32 +38,13 @@ namespace Actividad2
             this.BtnModificarArticulo = new System.Windows.Forms.Button();
             this.BtnBorrarArticulo = new System.Windows.Forms.Button();
             this.dataGridViewArticulos = new System.Windows.Forms.DataGridView();
+            this.lblTituloArticulos = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewArticulos)).BeginInit();
             this.SuspendLayout();
             // 
-            // listView1
-            // 
-            this.listView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.DETALLES});
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(115, 93);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(589, 345);
-            this.listView1.TabIndex = 1;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.View = System.Windows.Forms.View.Details;
-            // 
-            // DETALLES
-            // 
-            this.DETALLES.Text = "ID Articulo";
-            this.DETALLES.Width = 266;
-            // 
             // searchTextBox
             // 
-            this.searchTextBox.Location = new System.Drawing.Point(241, 67);
+            this.searchTextBox.Location = new System.Drawing.Point(159, 100);
             this.searchTextBox.Name = "searchTextBox";
             this.searchTextBox.Size = new System.Drawing.Size(120, 20);
             this.searchTextBox.TabIndex = 15;
@@ -74,7 +53,7 @@ namespace Actividad2
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label2.Location = new System.Drawing.Point(511, 70);
+            this.label2.Location = new System.Drawing.Point(575, 103);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(106, 13);
             this.label2.TabIndex = 17;
@@ -86,7 +65,7 @@ namespace Actividad2
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.SystemColors.Control;
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(153, 71);
+            this.label1.Location = new System.Drawing.Point(71, 104);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(82, 13);
             this.label1.TabIndex = 14;
@@ -98,7 +77,7 @@ namespace Actividad2
             this.searchButton.BackColor = System.Drawing.SystemColors.Control;
             this.searchButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.searchButton.Image = global::Actividad2.Properties.Resources.lupa;
-            this.searchButton.Location = new System.Drawing.Point(367, 67);
+            this.searchButton.Location = new System.Drawing.Point(285, 100);
             this.searchButton.Name = "searchButton";
             this.searchButton.Size = new System.Drawing.Size(23, 21);
             this.searchButton.TabIndex = 20;
@@ -109,7 +88,7 @@ namespace Actividad2
             this.btnAtrasMarcaMenuArticulo.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btnAtrasMarcaMenuArticulo.Image = global::Actividad2.Properties.Resources.icons8_atrás_161;
             this.btnAtrasMarcaMenuArticulo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAtrasMarcaMenuArticulo.Location = new System.Drawing.Point(29, 393);
+            this.btnAtrasMarcaMenuArticulo.Location = new System.Drawing.Point(69, 496);
             this.btnAtrasMarcaMenuArticulo.Name = "btnAtrasMarcaMenuArticulo";
             this.btnAtrasMarcaMenuArticulo.Size = new System.Drawing.Size(59, 32);
             this.btnAtrasMarcaMenuArticulo.TabIndex = 19;
@@ -122,7 +101,7 @@ namespace Actividad2
             // 
             this.BtnModificarArticulo.Image = global::Actividad2.Properties.Resources.icons8_modificar_16;
             this.BtnModificarArticulo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnModificarArticulo.Location = new System.Drawing.Point(555, 12);
+            this.BtnModificarArticulo.Location = new System.Drawing.Point(555, 33);
             this.BtnModificarArticulo.Name = "BtnModificarArticulo";
             this.BtnModificarArticulo.Size = new System.Drawing.Size(77, 37);
             this.BtnModificarArticulo.TabIndex = 18;
@@ -135,7 +114,7 @@ namespace Actividad2
             // 
             this.BtnBorrarArticulo.Image = global::Actividad2.Properties.Resources.multiply;
             this.BtnBorrarArticulo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnBorrarArticulo.Location = new System.Drawing.Point(638, 12);
+            this.BtnBorrarArticulo.Location = new System.Drawing.Point(638, 33);
             this.BtnBorrarArticulo.Name = "BtnBorrarArticulo";
             this.BtnBorrarArticulo.Size = new System.Drawing.Size(66, 37);
             this.BtnBorrarArticulo.TabIndex = 16;
@@ -146,17 +125,29 @@ namespace Actividad2
             // 
             // dataGridViewArticulos
             // 
+            this.dataGridViewArticulos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridViewArticulos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewArticulos.Location = new System.Drawing.Point(115, 129);
+            this.dataGridViewArticulos.Location = new System.Drawing.Point(69, 129);
             this.dataGridViewArticulos.Name = "dataGridViewArticulos";
-            this.dataGridViewArticulos.Size = new System.Drawing.Size(574, 296);
+            this.dataGridViewArticulos.Size = new System.Drawing.Size(635, 296);
             this.dataGridViewArticulos.TabIndex = 21;
+            // 
+            // lblTituloArticulos
+            // 
+            this.lblTituloArticulos.AutoSize = true;
+            this.lblTituloArticulos.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTituloArticulos.Location = new System.Drawing.Point(12, 9);
+            this.lblTituloArticulos.Name = "lblTituloArticulos";
+            this.lblTituloArticulos.Size = new System.Drawing.Size(56, 13);
+            this.lblTituloArticulos.TabIndex = 22;
+            this.lblTituloArticulos.Text = "Articulos";
             // 
             // FormMenuArticulo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 540);
+            this.Controls.Add(this.lblTituloArticulos);
             this.Controls.Add(this.dataGridViewArticulos);
             this.Controls.Add(this.searchButton);
             this.Controls.Add(this.btnAtrasMarcaMenuArticulo);
@@ -165,7 +156,6 @@ namespace Actividad2
             this.Controls.Add(this.label2);
             this.Controls.Add(this.BtnBorrarArticulo);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.listView1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormMenuArticulo";
             this.Text = "MenuArticulo";
@@ -182,9 +172,6 @@ namespace Actividad2
         }
 
         #endregion
-
-        private System.Windows.Forms.ListView listView1;
-        private System.Windows.Forms.ColumnHeader DETALLES;
         private System.Windows.Forms.Button BtnModificarArticulo;
         private System.Windows.Forms.TextBox searchTextBox;
         private System.Windows.Forms.Label label2;
@@ -193,5 +180,6 @@ namespace Actividad2
         private System.Windows.Forms.Button btnAtrasMarcaMenuArticulo;
         private System.Windows.Forms.Button searchButton;
         private System.Windows.Forms.DataGridView dataGridViewArticulos;
+        private System.Windows.Forms.Label lblTituloArticulos;
     }
 }

@@ -24,7 +24,8 @@ namespace Actividad2
 
         private void FormListadoMarca_Load(object sender, EventArgs e)
         {
-
+            MarcaNegocio negocio = new MarcaNegocio();
+            dgvMarca.DataSource = negocio.listar();
         }
 
         private void btnCancelarListaMarca_Click(object sender, EventArgs e)
@@ -58,5 +59,6 @@ namespace Actividad2
             //Muestra la ventana y no se va a cerrar hasta que se finalice de usar
             modificarMarca.ShowDialog();
         }
+
     }
 }

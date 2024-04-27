@@ -7,19 +7,20 @@ using System.Data.SqlClient;
 
 namespace Actividad2
 {
-    class ArticuloNegocio
+    internal class MarcaNegocio
     {
-        public List<Articulo> listar()
+        public List<Marca> listar()
         {
-            List<Articulo> lista = new List<Articulo>();
+            List<Marca> lista = new List<Marca>();
             SqlConnection conexion = new SqlConnection();
             SqlCommand comando = new SqlCommand();
             SqlDataReader lector;
+
             try
             {
                 conexion.ConnectionString = "server=.\\SQLEXPRESS; database=CATALOGO_P3_DB; integrated security=true";
                 comando.CommandType = System.Data.CommandType.Text;
-                comando.CommandText = "select Id, Codigo, Nombre, Descripcion, Precio from ARTICULOS";
+                comando.CommandText = "Select Id, Descripcion From MARCAS";
                 comando.Connection = conexion;
 
                 conexion.Open();
@@ -27,15 +28,12 @@ namespace Actividad2
 
                 while (lector.Read())
                 {
-                    Articulo articulo = new Articulo();
-                    articulo.ID = (int)lector["Id"];
-                    articulo.codigo = (string)lector["Codigo"];
-                    articulo.nombre = (string)lector["Nombre"];
-                    articulo.descripcion = (string)lector["Descripcion"];
-                    articulo.precio = (decimal)lector["Precio"];
+                    Marca aux = new Marca();
+                    
+                    aux.Id = lector.GetInt32(0);
+                    aux.Descripcion = (string)lector["Descripcion"];
 
-                    lista.Add(articulo);
-
+                    lista.Add(aux);
                 }
 
                 conexion.Close();
@@ -43,7 +41,6 @@ namespace Actividad2
             }
             catch (Exception ex)
             {
-
                 throw ex;
             }
         }

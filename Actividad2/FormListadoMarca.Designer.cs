@@ -29,13 +29,14 @@
         private void InitializeComponent()
         {
             this.txtBusquedaMarca = new System.Windows.Forms.TextBox();
-            this.listadoMarcas = new System.Windows.Forms.ListBox();
             this.lblBusquedaMarcas = new System.Windows.Forms.Label();
             this.lblTituloMarca = new System.Windows.Forms.Label();
             this.btnBorrarMarca = new System.Windows.Forms.Button();
             this.btnModificarMarca = new System.Windows.Forms.Button();
             this.btnAtrasListaMarca = new System.Windows.Forms.Button();
             this.btnBusqueda = new System.Windows.Forms.Button();
+            this.dgvMarca = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMarca)).BeginInit();
             this.SuspendLayout();
             // 
             // txtBusquedaMarca
@@ -47,17 +48,6 @@
             this.txtBusquedaMarca.Name = "txtBusquedaMarca";
             this.txtBusquedaMarca.Size = new System.Drawing.Size(236, 20);
             this.txtBusquedaMarca.TabIndex = 0;
-            // 
-            // listadoMarcas
-            // 
-            this.listadoMarcas.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.listadoMarcas.FormattingEnabled = true;
-            this.listadoMarcas.Location = new System.Drawing.Point(41, 82);
-            this.listadoMarcas.Name = "listadoMarcas";
-            this.listadoMarcas.Size = new System.Drawing.Size(698, 303);
-            this.listadoMarcas.TabIndex = 1;
             // 
             // lblBusquedaMarcas
             // 
@@ -132,24 +122,35 @@
             this.btnBusqueda.UseVisualStyleBackColor = false;
             this.btnBusqueda.Click += new System.EventHandler(this.btnBusqueda_Click);
             // 
+            // dgvMarca
+            // 
+            this.dgvMarca.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvMarca.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvMarca.Location = new System.Drawing.Point(41, 98);
+            this.dgvMarca.Name = "dgvMarca";
+            this.dgvMarca.Size = new System.Drawing.Size(698, 284);
+            this.dgvMarca.TabIndex = 22;
+            // 
             // FormListadoMarca
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.dgvMarca);
             this.Controls.Add(this.lblTituloMarca);
             this.Controls.Add(this.btnBorrarMarca);
             this.Controls.Add(this.btnModificarMarca);
             this.Controls.Add(this.btnAtrasListaMarca);
             this.Controls.Add(this.btnBusqueda);
             this.Controls.Add(this.lblBusquedaMarcas);
-            this.Controls.Add(this.listadoMarcas);
             this.Controls.Add(this.txtBusquedaMarca);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormListadoMarca";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormListadoMarca";
             this.Load += new System.EventHandler(this.FormListadoMarca_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMarca)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -158,12 +159,12 @@
         #endregion
 
         private System.Windows.Forms.TextBox txtBusquedaMarca;
-        private System.Windows.Forms.ListBox listadoMarcas;
         private System.Windows.Forms.Label lblBusquedaMarcas;
         private System.Windows.Forms.Button btnBusqueda;
         private System.Windows.Forms.Button btnAtrasListaMarca;
         private System.Windows.Forms.Button btnModificarMarca;
         private System.Windows.Forms.Button btnBorrarMarca;
         private System.Windows.Forms.Label lblTituloMarca;
+        private System.Windows.Forms.DataGridView dgvMarca;
     }
 }
