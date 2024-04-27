@@ -47,5 +47,40 @@ namespace Actividad2
                 throw ex;
             }
         }
+
+        public List<string> listarNombres()
+        {
+            List<string> lista = new List<string>();
+            SqlConnection conexion = new SqlConnection();
+            SqlCommand comando = new SqlCommand();
+            SqlDataReader lector;
+            try
+            {
+                conexion.ConnectionString = "server=.\\SQLEXPRESS; database=CATALOGO_P3_DB; integrated security=true";
+                comando.CommandType = System.Data.CommandType.Text;
+                comando.CommandText = "select Nombre from ARTICULOS";
+                comando.Connection = conexion;
+
+                conexion.Open();
+                lector = comando.ExecuteReader();
+
+                while (lector.Read())
+                {
+                    string nombre;
+                    nombre = (string)lector["Nombre"];
+                    lista.Add(nombre);
+                }
+
+                conexion.Close();
+                return lista;
+
+            }
+            catch (Exception ex)
+            {
+
+                throw;
+            }
+
+        }
     }
 }

@@ -25,7 +25,7 @@ namespace Actividad2
                 conexion.Open();
                 lector = comando.ExecuteReader();
 
-                while(lector.Read())
+                while (lector.Read())
                 {
                     Categoria categoria = new Categoria();
                     categoria.Descripcion = (String)lector["Descripcion"];
@@ -39,7 +39,7 @@ namespace Actividad2
             catch (Exception ex)
             {
 
-                throw;
+                throw ex;
             }
         }
     }

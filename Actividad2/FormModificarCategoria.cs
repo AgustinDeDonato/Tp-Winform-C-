@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Actividad2
 {
@@ -20,6 +21,14 @@ namespace Actividad2
         private void buttonCancelar_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void FormModificarCategoria_Load(object sender, EventArgs e)
+        {
+            CategoriaNegocio negocio = new CategoriaNegocio();
+            comboBoxCategoriaMod.DataSource = negocio.listar();
+            comboBoxCategoriaMod.DisplayMember = "Descripcion";
+            comboBoxCategoriaMod.Refresh();
         }
     }
 }

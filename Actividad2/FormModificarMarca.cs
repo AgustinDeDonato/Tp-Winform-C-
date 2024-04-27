@@ -21,5 +21,13 @@ namespace Actividad2
         {
             this.Close();
         }
+
+        private void FormModificarMarca_Load(object sender, EventArgs e)
+        {
+            MarcaNegocio negocio = new MarcaNegocio();
+            comboBoxMarca.DataSource = negocio.listar();
+            comboBoxMarca.DisplayMember = "Descripcion";
+            comboBoxMarca.Refresh();
+        }
     }
 }

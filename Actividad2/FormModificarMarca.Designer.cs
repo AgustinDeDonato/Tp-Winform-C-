@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.label7 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBoxMarca = new System.Windows.Forms.ComboBox();
             this.labelIDActual = new System.Windows.Forms.Label();
             this.labelDescripcionActual = new System.Windows.Forms.Label();
             this.textBoxID = new System.Windows.Forms.TextBox();
@@ -52,13 +52,13 @@
             this.label7.TabIndex = 72;
             this.label7.Text = "Id de la marca a modificar:";
             // 
-            // comboBox1
+            // comboBoxMarca
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(407, 52);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(143, 21);
-            this.comboBox1.TabIndex = 71;
+            this.comboBoxMarca.FormattingEnabled = true;
+            this.comboBoxMarca.Location = new System.Drawing.Point(407, 52);
+            this.comboBoxMarca.Name = "comboBoxMarca";
+            this.comboBoxMarca.Size = new System.Drawing.Size(143, 21);
+            this.comboBoxMarca.TabIndex = 71;
             // 
             // labelIDActual
             // 
@@ -149,7 +149,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.comboBoxMarca);
             this.Controls.Add(this.labelIDActual);
             this.Controls.Add(this.labelDescripcionActual);
             this.Controls.Add(this.textBoxID);
@@ -163,6 +163,7 @@
             this.Name = "FormModificarMarca";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Modificar marca";
+            this.Load += new System.EventHandler(this.FormModificarMarca_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -171,7 +172,7 @@
         #endregion
 
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox comboBoxMarca;
         private System.Windows.Forms.Label labelIDActual;
         private System.Windows.Forms.Label labelDescripcionActual;
         private System.Windows.Forms.TextBox textBoxID;
