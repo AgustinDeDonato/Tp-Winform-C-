@@ -12,6 +12,7 @@ namespace Actividad2
 {
     public partial class FormMenuArticulo : Form
     {
+        private List<Articulo> ListaArticulo;
         public FormMenuArticulo()
         {
             InitializeComponent();
@@ -85,7 +86,33 @@ namespace Actividad2
         private void FormMenuArticulo_Load(object sender, EventArgs e)
         {
             ArticuloNegocio negocio = new ArticuloNegocio();
-            dataGridViewArticulos.DataSource = negocio.listar();
+            ListaArticulo = negocio.listar();
+            dgvArticulos.DataSource = ListaArticulo;
+            dgvArticulos.Columns["imagen"].Visible = false;
+            CargarImagen(ListaArticulo[0].imagen.Url);
+        }
+
+        private void dgvArticulos_SelectionChanged(object sender, EventArgs e)
+        {
+            Articulo seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
+            CargarImagen(seleccionado.imagen.Url);
+
+            Marca mar = new Marca();
+            mar.ToString();
+
+            Categoria cat = new Categoria();
+            cat.ToString();
+        }
+        private void CargarImagen(string imagen)
+        {
+            try
+            {
+               pbxArticulo.Load(imagen);
+            }
+            catch(Exception ex)
+            {
+                pbxArticulo.Load("https://cdn.icon-icons.com/icons2/3001/PNG/512/default_filetype_file_empty_document_icon_187718.png");
+            }
         }
         // Motor de busqueda para el listbox 
         // Funcionalidad dormida hasta no tener colleccion de articulos
