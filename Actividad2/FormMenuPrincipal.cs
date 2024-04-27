@@ -7,8 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
-namespace Actividad2
+using Negocios;
+using Dominios;
+namespace WindowsForms
 {
     public partial class FormMenuPrincipal : Form
     {

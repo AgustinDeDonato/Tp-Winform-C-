@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Actividad2
+namespace WindowsForms
 {
     public partial class FormBusquedaAvanzada : Form
     {

@@ -46,10 +46,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Articulo.cs" />
-    <Compile Include="ArticuloNegocio.cs" />
-    <Compile Include="Categoria.cs" />
-    <Compile Include="CategoriaNegocio.cs" />
     <Compile Include="FormBusquedaAvanzada.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -134,15 +130,12 @@
     <Compile Include="FormModificarMarca.Designer.cs">
       <DependentUpon>FormModificarMarca.cs</DependentUpon>
     </Compile>
-    <Compile Include="Imagen.cs" />
-    <Compile Include="Marca.cs" />
     <Compile Include="FormMenuArticulo.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormMenuArticulo.Designer.cs">
       <DependentUpon>FormMenuArticulo.cs</DependentUpon>
     </Compile>
-    <Compile Include="MarcaNegocio.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FormAgregarMarca.resx">
@@ -233,6 +226,16 @@
     <Content Include="Resources\loupe_79257.png" />
     <Content Include="Resources\plus.png" />
     <None Include="Resources\plus1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Dominios\Dominios.csproj">
+      <Project>{17ec276f-77df-48db-ba55-0a804891998f}</Project>
+      <Name>Dominios</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Negocios\Negocios.csproj">
+      <Project>{fc3231d5-65a2-43bd-8293-67955c09aeab}</Project>
+      <Name>Negocios</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Actividad2
+namespace Dominios
 {
-    class Articulo
+    public class Articulo
     {
         public string codigo { get; set; }
         public string nombre { get; set; }

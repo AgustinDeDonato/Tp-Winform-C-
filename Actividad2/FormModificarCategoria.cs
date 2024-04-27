@@ -8,8 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
-
-namespace Actividad2
+using Negocios;
+namespace WindowsForms
 {
     public partial class FormModificarCategoria : Form
     {

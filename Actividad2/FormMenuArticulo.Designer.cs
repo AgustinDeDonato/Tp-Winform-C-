@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Actividad2
+namespace WindowsForms
 {
     partial class FormMenuArticulo
     {
