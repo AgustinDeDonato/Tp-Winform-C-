@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Dominios;
+using Negocios;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,11 +18,46 @@ namespace WindowsForms
         {
             InitializeComponent();
         }
-
-        private void buttonCancelar_Click(object sender, EventArgs e)
+        private void FormEliminarMarca_Load(object sender, EventArgs e)
         {
-            //Baja fisica&logica
-            //mensaje de exito
+            {
+                //Funcionalidad listado combobox
+                MarcaNegocio negocio = new MarcaNegocio();
+
+                try
+                {
+                    comboboxMarca.DataSource = negocio.listar();
+
+                    comboboxMarca.SelectedIndex = -1;
+
+                }
+                catch (Exception ex)
+                {
+
+                    MessageBox.Show(ex.ToString());
+                }
+
+            }
+
+        }
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            MarcaNegocio negocio = new MarcaNegocio();
+            Marca seleccionado;
+            //Baja Fisica Marca
+            try
+            {
+                DialogResult respuesta = MessageBox.Show("¿De verdad querés eliminarlo?", "Eliminando", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                if (respuesta == DialogResult.Yes)
+                {
+                    seleccionado = (Marca)comboboxMarca.SelectedItem;
+                    negocio.eliminar(seleccionado.Id);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
             MessageBox.Show("Se ha eliminado Correctamente");
         }
 
