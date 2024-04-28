@@ -85,6 +85,7 @@
             this.comboBoxMarca.Name = "comboBoxMarca";
             this.comboBoxMarca.Size = new System.Drawing.Size(121, 21);
             this.comboBoxMarca.TabIndex = 3;
+            this.comboBoxMarca.SelectedIndexChanged += new System.EventHandler(this.comboBoxMarca_SelectedIndexChanged);
             // 
             // textBoxCodigo
             // 

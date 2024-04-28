@@ -7,11 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Dominios;
 using Negocios;
 namespace WindowsForms
 {
     public partial class FormListadoMarca : Form
     {
+        private List<Marca> listaMarca;
         public FormListadoMarca()
         {
             InitializeComponent();
@@ -25,7 +27,8 @@ namespace WindowsForms
         private void FormListadoMarca_Load(object sender, EventArgs e)
         {
             MarcaNegocio negocio = new MarcaNegocio();
-            dgvMarca.DataSource = negocio.listar();
+            listaMarca = negocio.listar();
+            dgvMarca.DataSource = listaMarca;
         }
 
         private void btnCancelarListaMarca_Click(object sender, EventArgs e)
@@ -60,5 +63,13 @@ namespace WindowsForms
             modificarMarca.ShowDialog();
         }
 
+        private void txtBusquedaMarca_TextChanged_1(object sender, EventArgs e)
+        {
+            List<Marca> listaFiltrada = new List<Marca>();
+            string filtro = txtBusquedaMarca.Text;
+            listaFiltrada = listaMarca.FindAll(x => x.Descripcion.ToUpper().Contains(filtro.ToUpper()));
+            dgvMarca.DataSource = null;
+            dgvMarca.DataSource = listaFiltrada;
+        }
     }
 }

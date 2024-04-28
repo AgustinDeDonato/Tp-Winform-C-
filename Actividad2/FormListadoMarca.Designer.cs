@@ -34,7 +34,6 @@
             this.btnBorrarMarca = new System.Windows.Forms.Button();
             this.btnModificarMarca = new System.Windows.Forms.Button();
             this.btnAtrasListaMarca = new System.Windows.Forms.Button();
-            this.btnBusqueda = new System.Windows.Forms.Button();
             this.dgvMarca = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMarca)).BeginInit();
             this.SuspendLayout();
@@ -48,6 +47,7 @@
             this.txtBusquedaMarca.Name = "txtBusquedaMarca";
             this.txtBusquedaMarca.Size = new System.Drawing.Size(236, 20);
             this.txtBusquedaMarca.TabIndex = 0;
+            this.txtBusquedaMarca.TextChanged += new System.EventHandler(this.txtBusquedaMarca_TextChanged_1);
             // 
             // lblBusquedaMarcas
             // 
@@ -109,19 +109,6 @@
             this.btnAtrasListaMarca.UseVisualStyleBackColor = true;
             this.btnAtrasListaMarca.Click += new System.EventHandler(this.btnCancelarListaMarca_Click);
             // 
-            // btnBusqueda
-            // 
-            this.btnBusqueda.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnBusqueda.BackColor = System.Drawing.SystemColors.Control;
-            this.btnBusqueda.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnBusqueda.Image = global::Actividad2.Properties.Resources.lupa;
-            this.btnBusqueda.Location = new System.Drawing.Point(341, 44);
-            this.btnBusqueda.Name = "btnBusqueda";
-            this.btnBusqueda.Size = new System.Drawing.Size(23, 21);
-            this.btnBusqueda.TabIndex = 3;
-            this.btnBusqueda.UseVisualStyleBackColor = false;
-            this.btnBusqueda.Click += new System.EventHandler(this.btnBusqueda_Click);
-            // 
             // dgvMarca
             // 
             this.dgvMarca.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
@@ -145,7 +132,6 @@
             this.Controls.Add(this.btnBorrarMarca);
             this.Controls.Add(this.btnModificarMarca);
             this.Controls.Add(this.btnAtrasListaMarca);
-            this.Controls.Add(this.btnBusqueda);
             this.Controls.Add(this.lblBusquedaMarcas);
             this.Controls.Add(this.txtBusquedaMarca);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -163,7 +149,6 @@
 
         private System.Windows.Forms.TextBox txtBusquedaMarca;
         private System.Windows.Forms.Label lblBusquedaMarcas;
-        private System.Windows.Forms.Button btnBusqueda;
         private System.Windows.Forms.Button btnAtrasListaMarca;
         private System.Windows.Forms.Button btnModificarMarca;
         private System.Windows.Forms.Button btnBorrarMarca;

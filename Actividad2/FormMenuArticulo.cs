@@ -69,21 +69,6 @@ namespace WindowsForms
             eliminarArticulo.ShowDialog();
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
-            //Llamado Ventana BusquedaAvanzada
-            foreach (var item in Application.OpenForms)
-            {
-                if (item.GetType() == typeof(FormBusquedaAvanzada))
-
-                    return;
-            }
-
-            FormBusquedaAvanzada busquedaAvanzada = new FormBusquedaAvanzada();
-            busquedaAvanzada.ShowDialog();
-
-        }
-
         private void FormMenuArticulo_Load(object sender, EventArgs e)
         {
             ArticuloNegocio negocio = new ArticuloNegocio();
@@ -91,6 +76,12 @@ namespace WindowsForms
             dgvArticulos.DataSource = ListaArticulo;
             dgvArticulos.Columns["imagen"].Visible = false;
             CargarImagen(ListaArticulo[0].imagen.Url);
+            comboBoxCampo.Items.Add("Nombre");
+            comboBoxCampo.Items.Add("Codigo");
+            comboBoxCampo.Items.Add("Descripción");
+            comboBoxCampo.Items.Add("Marca");
+            comboBoxCampo.Items.Add("Categoria");
+            comboBoxCampo.Items.Add("Precio");
         }
 
         private void dgvArticulos_SelectionChanged(object sender, EventArgs e)
@@ -113,6 +104,52 @@ namespace WindowsForms
             catch(Exception ex)
             {
                 pbxArticulo.Load("https://cdn.icon-icons.com/icons2/3001/PNG/512/default_filetype_file_empty_document_icon_187718.png");
+            }
+        }
+
+        private void searchTextBox_TextChanged_1(object sender, EventArgs e)
+        {
+            List<Articulo> listaFiltrada = new List<Articulo>();
+            string filtro = searchTextBox.Text;
+            listaFiltrada = ListaArticulo.FindAll(x => x.nombre.ToUpper().Contains(filtro.ToUpper()));
+            dgvArticulos.DataSource = null;
+            dgvArticulos.DataSource = listaFiltrada;
+        }
+
+        private void comboBoxCampo_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+            string opcion = comboBoxCampo.SelectedItem.ToString();
+            if (opcion == "Precio")
+            {
+                comboBoxCriterio.Items.Clear();
+                comboBoxCriterio.Items.Add("Mayor a");
+                comboBoxCriterio.Items.Add("Menor a");
+                comboBoxCriterio.Items.Add("Igual a");
+            }
+            else
+            {
+                comboBoxCriterio.Items.Clear();
+                comboBoxCriterio.Items.Add("Empieza con");
+                comboBoxCriterio.Items.Add("Termina con");
+                comboBoxCriterio.Items.Add("Contiene");
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            List<Articulo> listaFiltrada = new List<Articulo>();
+            ArticuloNegocio negocio = new ArticuloNegocio();
+            try
+            {
+                string campo = comboBoxCampo.SelectedItem.ToString();
+                string criterio = comboBoxCriterio.SelectedItem.ToString();
+                string filtro = textBoxFiltroAvanzado.Text;
+                dgvArticulos.DataSource = null;
+                dgvArticulos.DataSource = negocio.filtrar(campo, criterio, filtro);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
             }
         }
         // Motor de busqueda para el listbox 

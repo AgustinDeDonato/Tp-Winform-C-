@@ -31,7 +31,6 @@ namespace WindowsForms
         private void InitializeComponent()
         {
             this.searchTextBox = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.searchButton = new System.Windows.Forms.Button();
             this.btnAtrasMarcaMenuArticulo = new System.Windows.Forms.Button();
@@ -40,34 +39,31 @@ namespace WindowsForms
             this.dgvArticulos = new System.Windows.Forms.DataGridView();
             this.lblTituloArticulos = new System.Windows.Forms.Label();
             this.pbxArticulo = new System.Windows.Forms.PictureBox();
+            this.groupBoxFiltro = new System.Windows.Forms.GroupBox();
+            this.btnBusquedaAvanzada = new System.Windows.Forms.Button();
+            this.textBoxFiltroAvanzado = new System.Windows.Forms.TextBox();
+            this.labelCampo = new System.Windows.Forms.Label();
+            this.comboBoxCampo = new System.Windows.Forms.ComboBox();
+            this.comboBoxCriterio = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvArticulos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxArticulo)).BeginInit();
+            this.groupBoxFiltro.SuspendLayout();
             this.SuspendLayout();
             // 
             // searchTextBox
             // 
-            this.searchTextBox.Location = new System.Drawing.Point(105, 100);
+            this.searchTextBox.Location = new System.Drawing.Point(109, 92);
             this.searchTextBox.Name = "searchTextBox";
             this.searchTextBox.Size = new System.Drawing.Size(120, 20);
             this.searchTextBox.TabIndex = 15;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label2.Location = new System.Drawing.Point(420, 104);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(106, 13);
-            this.label2.TabIndex = 17;
-            this.label2.Text = "Busqueda Avanzada";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.searchTextBox.TextChanged += new System.EventHandler(this.searchTextBox_TextChanged_1);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.SystemColors.Control;
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(17, 104);
+            this.label1.Location = new System.Drawing.Point(21, 96);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(82, 13);
             this.label1.TabIndex = 14;
@@ -79,7 +75,7 @@ namespace WindowsForms
             this.searchButton.BackColor = System.Drawing.SystemColors.Control;
             this.searchButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.searchButton.Image = global::Actividad2.Properties.Resources.lupa;
-            this.searchButton.Location = new System.Drawing.Point(231, 100);
+            this.searchButton.Location = new System.Drawing.Point(246, 91);
             this.searchButton.Name = "searchButton";
             this.searchButton.Size = new System.Drawing.Size(23, 21);
             this.searchButton.TabIndex = 20;
@@ -150,18 +146,84 @@ namespace WindowsForms
             // 
             // pbxArticulo
             // 
-            this.pbxArticulo.Location = new System.Drawing.Point(536, 129);
+            this.pbxArticulo.Location = new System.Drawing.Point(535, 129);
             this.pbxArticulo.Name = "pbxArticulo";
             this.pbxArticulo.Size = new System.Drawing.Size(253, 265);
             this.pbxArticulo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbxArticulo.TabIndex = 23;
             this.pbxArticulo.TabStop = false;
             // 
+            // groupBoxFiltro
+            // 
+            this.groupBoxFiltro.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBoxFiltro.Controls.Add(this.btnBusquedaAvanzada);
+            this.groupBoxFiltro.Controls.Add(this.textBoxFiltroAvanzado);
+            this.groupBoxFiltro.Controls.Add(this.labelCampo);
+            this.groupBoxFiltro.Controls.Add(this.comboBoxCampo);
+            this.groupBoxFiltro.Controls.Add(this.comboBoxCriterio);
+            this.groupBoxFiltro.Location = new System.Drawing.Point(310, 77);
+            this.groupBoxFiltro.Name = "groupBoxFiltro";
+            this.groupBoxFiltro.Size = new System.Drawing.Size(478, 46);
+            this.groupBoxFiltro.TabIndex = 60;
+            this.groupBoxFiltro.TabStop = false;
+            this.groupBoxFiltro.Text = "Filtro Avanzado";
+            // 
+            // btnBusquedaAvanzada
+            // 
+            this.btnBusquedaAvanzada.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnBusquedaAvanzada.BackColor = System.Drawing.SystemColors.Control;
+            this.btnBusquedaAvanzada.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnBusquedaAvanzada.Image = global::Actividad2.Properties.Resources.lupa;
+            this.btnBusquedaAvanzada.Location = new System.Drawing.Point(439, 13);
+            this.btnBusquedaAvanzada.Name = "btnBusquedaAvanzada";
+            this.btnBusquedaAvanzada.Size = new System.Drawing.Size(23, 21);
+            this.btnBusquedaAvanzada.TabIndex = 58;
+            this.btnBusquedaAvanzada.UseVisualStyleBackColor = false;
+            this.btnBusquedaAvanzada.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // textBoxFiltroAvanzado
+            // 
+            this.textBoxFiltroAvanzado.Location = new System.Drawing.Point(327, 13);
+            this.textBoxFiltroAvanzado.Name = "textBoxFiltroAvanzado";
+            this.textBoxFiltroAvanzado.Size = new System.Drawing.Size(96, 20);
+            this.textBoxFiltroAvanzado.TabIndex = 57;
+            // 
+            // labelCampo
+            // 
+            this.labelCampo.AutoSize = true;
+            this.labelCampo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCampo.Location = new System.Drawing.Point(16, 15);
+            this.labelCampo.Name = "labelCampo";
+            this.labelCampo.Size = new System.Drawing.Size(51, 16);
+            this.labelCampo.TabIndex = 56;
+            this.labelCampo.Text = "Campo";
+            // 
+            // comboBoxCampo
+            // 
+            this.comboBoxCampo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxCampo.FormattingEnabled = true;
+            this.comboBoxCampo.Location = new System.Drawing.Point(73, 13);
+            this.comboBoxCampo.Name = "comboBoxCampo";
+            this.comboBoxCampo.Size = new System.Drawing.Size(121, 21);
+            this.comboBoxCampo.TabIndex = 55;
+            this.comboBoxCampo.SelectedIndexChanged += new System.EventHandler(this.comboBoxCampo_SelectedIndexChanged_1);
+            // 
+            // comboBoxCriterio
+            // 
+            this.comboBoxCriterio.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxCriterio.FormattingEnabled = true;
+            this.comboBoxCriterio.Location = new System.Drawing.Point(200, 13);
+            this.comboBoxCriterio.Name = "comboBoxCriterio";
+            this.comboBoxCriterio.Size = new System.Drawing.Size(121, 21);
+            this.comboBoxCriterio.TabIndex = 54;
+            // 
             // FormMenuArticulo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 540);
+            this.Controls.Add(this.groupBoxFiltro);
             this.Controls.Add(this.pbxArticulo);
             this.Controls.Add(this.lblTituloArticulos);
             this.Controls.Add(this.dgvArticulos);
@@ -169,7 +231,6 @@ namespace WindowsForms
             this.Controls.Add(this.btnAtrasMarcaMenuArticulo);
             this.Controls.Add(this.BtnModificarArticulo);
             this.Controls.Add(this.searchTextBox);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.BtnBorrarArticulo);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -178,6 +239,8 @@ namespace WindowsForms
             this.Load += new System.EventHandler(this.FormMenuArticulo_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvArticulos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxArticulo)).EndInit();
+            this.groupBoxFiltro.ResumeLayout(false);
+            this.groupBoxFiltro.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -191,7 +254,6 @@ namespace WindowsForms
         #endregion
         private System.Windows.Forms.Button BtnModificarArticulo;
         private System.Windows.Forms.TextBox searchTextBox;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button BtnBorrarArticulo;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnAtrasMarcaMenuArticulo;
@@ -199,5 +261,11 @@ namespace WindowsForms
         private System.Windows.Forms.DataGridView dgvArticulos;
         private System.Windows.Forms.Label lblTituloArticulos;
         private System.Windows.Forms.PictureBox pbxArticulo;
+        private System.Windows.Forms.GroupBox groupBoxFiltro;
+        private System.Windows.Forms.Button btnBusquedaAvanzada;
+        private System.Windows.Forms.TextBox textBoxFiltroAvanzado;
+        private System.Windows.Forms.Label labelCampo;
+        private System.Windows.Forms.ComboBox comboBoxCampo;
+        private System.Windows.Forms.ComboBox comboBoxCriterio;
     }
 }

@@ -18,25 +18,6 @@ namespace WindowsForms
         {
             InitializeComponent();
         }
-        private void FormEliminarArticulo_Load(object sender, EventArgs e)
-        {
-            //Funcionalidad listado combobox
-            ArticuloNegocio negocio = new ArticuloNegocio();
-           
-            try
-            {
-                comboboxArticulo.DataSource = negocio.listar();
-                
-                comboboxArticulo.SelectedIndex = -1;
-                
-            }
-            catch (Exception ex)
-            {
-
-                MessageBox.Show(ex.ToString());
-            }
-
-        }
 
         private void btnAtrasListaMarca_Click(object sender, EventArgs e)
         {
@@ -62,6 +43,29 @@ namespace WindowsForms
                 MessageBox.Show(ex.ToString());
             }
             MessageBox.Show("Se ha eliminado Correctamente");
+        }
+
+        private void comboboxArticulo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FormEliminarArticulo_Load_1(object sender, EventArgs e)
+        {
+            ArticuloNegocio negocio = new ArticuloNegocio();
+
+            try
+            {
+
+                comboboxArticulo.DataSource = negocio.listarNombres();
+                comboboxArticulo.SelectedIndex = -1;
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.ToString());
+            }
         }
     }
 }

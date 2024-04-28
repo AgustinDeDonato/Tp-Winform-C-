@@ -31,7 +31,6 @@
             this.lblBusquedaCategorias = new System.Windows.Forms.Label();
             this.txtBusquedaCategorias = new System.Windows.Forms.TextBox();
             this.btnAtrasListaCat = new System.Windows.Forms.Button();
-            this.btnBusquedaCat = new System.Windows.Forms.Button();
             this.btnBorrarCategoria = new System.Windows.Forms.Button();
             this.btnModificarCategoria = new System.Windows.Forms.Button();
             this.lblTituloCategoria = new System.Windows.Forms.Label();
@@ -58,6 +57,7 @@
             this.txtBusquedaCategorias.Name = "txtBusquedaCategorias";
             this.txtBusquedaCategorias.Size = new System.Drawing.Size(236, 20);
             this.txtBusquedaCategorias.TabIndex = 19;
+            this.txtBusquedaCategorias.TextChanged += new System.EventHandler(this.txtBusquedaCategorias_TextChanged_1);
             // 
             // btnAtrasListaCat
             // 
@@ -72,18 +72,6 @@
             this.btnAtrasListaCat.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnAtrasListaCat.UseVisualStyleBackColor = true;
             this.btnAtrasListaCat.Click += new System.EventHandler(this.btnAtrasListaCat_Click);
-            // 
-            // btnBusquedaCat
-            // 
-            this.btnBusquedaCat.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnBusquedaCat.BackColor = System.Drawing.SystemColors.Control;
-            this.btnBusquedaCat.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnBusquedaCat.Image = global::Actividad2.Properties.Resources.lupa;
-            this.btnBusquedaCat.Location = new System.Drawing.Point(353, 32);
-            this.btnBusquedaCat.Name = "btnBusquedaCat";
-            this.btnBusquedaCat.Size = new System.Drawing.Size(23, 21);
-            this.btnBusquedaCat.TabIndex = 22;
-            this.btnBusquedaCat.UseVisualStyleBackColor = false;
             // 
             // btnBorrarCategoria
             // 
@@ -143,7 +131,6 @@
             this.Controls.Add(this.btnBorrarCategoria);
             this.Controls.Add(this.btnModificarCategoria);
             this.Controls.Add(this.btnAtrasListaCat);
-            this.Controls.Add(this.btnBusquedaCat);
             this.Controls.Add(this.lblBusquedaCategorias);
             this.Controls.Add(this.txtBusquedaCategorias);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -159,7 +146,6 @@
         #endregion
 
         private System.Windows.Forms.Button btnAtrasListaCat;
-        private System.Windows.Forms.Button btnBusquedaCat;
         private System.Windows.Forms.Label lblBusquedaCategorias;
         private System.Windows.Forms.TextBox txtBusquedaCategorias;
         private System.Windows.Forms.Button btnBorrarCategoria;

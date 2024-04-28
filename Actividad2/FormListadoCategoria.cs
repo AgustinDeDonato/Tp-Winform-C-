@@ -7,12 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Dominios;
 using Negocios;
 
 namespace WindowsForms
 {
     public partial class FormListadoCategoria : Form
     {
+        private List<Categoria> listaCategorias;
         public FormListadoCategoria()
         {
             InitializeComponent();
@@ -26,7 +28,8 @@ namespace WindowsForms
         private void FormListadoCategoria_Load(object sender, EventArgs e)
         {
             CategoriaNegocio negocio = new CategoriaNegocio();
-            dataGridViewCategorias.DataSource = negocio.listar();
+            listaCategorias = negocio.listar();
+            dataGridViewCategorias.DataSource = listaCategorias;
         }
 
         private void btnModificarCategoria_Click(object sender, EventArgs e)
@@ -58,6 +61,15 @@ namespace WindowsForms
             }
             FormEliminarCategoria formEliminarCategoria = new FormEliminarCategoria();
             formEliminarCategoria.Show();
+        }
+
+        private void txtBusquedaCategorias_TextChanged_1(object sender, EventArgs e)
+        {
+            List<Categoria> listaFiltrada = new List<Categoria>();
+            string filtro = txtBusquedaCategorias.Text;
+            listaFiltrada = listaCategorias.FindAll(x => x.Descripcion.ToUpper().Contains(filtro.ToUpper()));
+            dataGridViewCategorias.DataSource = null;
+            dataGridViewCategorias.DataSource = listaFiltrada;
         }
     }
 }

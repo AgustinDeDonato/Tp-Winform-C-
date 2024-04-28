@@ -82,5 +82,10 @@ namespace WindowsForms
             }
             
         }
+
+        private void comboBoxMarca_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
