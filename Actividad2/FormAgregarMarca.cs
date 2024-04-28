@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Dominios;
+using Negocios;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -25,6 +27,26 @@ namespace WindowsForms
         private void FormAgregarMarca_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void buttonAgregar_Click(object sender, EventArgs e)
+        {
+            Marca nuevo = new Marca();
+            MarcaNegocio negocio = new MarcaNegocio();
+            try
+            {
+                nuevo.Descripcion = textBoxDescripcion.Text;
+
+                negocio.agregar(nuevo);
+                MessageBox.Show("agregado exitosamente");
+
+                textBoxDescripcion.Text = null;
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.ToString());
+            }
         }
     }
 }

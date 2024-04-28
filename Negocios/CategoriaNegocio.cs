@@ -15,17 +15,39 @@ namespace Negocios
             AccessoDatos datos = new AccessoDatos();
             try
             {
-                datos.setearConsulta("select Descripcion from CATEGORIAS");
+                datos.setearConsulta("select Id, Descripcion from CATEGORIAS");
                 datos.ejecutarLectura();
 
                 while (datos.Lector.Read())
                 {
                     Categoria categoria = new Categoria();
+                    categoria.Id = datos.Lector.GetInt32(0);
                     categoria.Descripcion = (String)datos.Lector["Descripcion"];
                     categorias.Add(categoria);
 
                 }
               return categorias;
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+            finally
+            {
+                datos.cerrarConexion();
+            }
+        }
+
+        public void agregar(Categoria nuevo)
+        {
+            AccessoDatos datos = new AccessoDatos();
+
+            try
+            {
+                datos.setearConsulta("insert into CATEGORIAS(Descripcion) values(@descripcion)");
+                datos.setearParametro("@descripcion", nuevo.Descripcion);
+                datos.ejecutarAccion();
             }
             catch (Exception ex)
             {

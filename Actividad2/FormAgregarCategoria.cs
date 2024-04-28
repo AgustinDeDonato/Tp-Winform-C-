@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Dominios;
+using Negocios;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -20,6 +22,31 @@ namespace WindowsForms
         private void buttonCancelar_Click(object sender, EventArgs e)
         {
            this.Close();
+        }
+
+        private void FormAgregarCategoria_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonAgregar_Click(object sender, EventArgs e)
+        {
+            Categoria nuevo = new Categoria();
+            CategoriaNegocio negocio = new CategoriaNegocio();
+            try
+            {
+                nuevo.Descripcion = textBoxDescripcion.Text;
+
+                negocio.agregar(nuevo);
+                MessageBox.Show("agregado exitosamente");
+
+                textBoxDescripcion.Text = null;
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.ToString());
+            }
         }
     }
 }

@@ -61,6 +61,7 @@
             this.buttonAgregar.Text = "Agregar";
             this.buttonAgregar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.buttonAgregar.UseVisualStyleBackColor = true;
+            this.buttonAgregar.Click += new System.EventHandler(this.buttonAgregar_Click);
             // 
             // label6
             // 
@@ -122,6 +123,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormAgregarCategoria";
             this.Text = "FormAgregarCategoria";
+            this.Load += new System.EventHandler(this.FormAgregarCategoria_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

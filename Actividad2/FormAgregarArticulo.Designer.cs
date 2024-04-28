@@ -33,7 +33,7 @@
             this.textBoxNombre = new System.Windows.Forms.TextBox();
             this.comboBoxMarca = new System.Windows.Forms.ComboBox();
             this.textBoxCodigo = new System.Windows.Forms.TextBox();
-            this.comboBoxCategoria = new System.Windows.Forms.ComboBox();
+            this.comboBoxCat = new System.Windows.Forms.ComboBox();
             this.textBoxURL = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -79,6 +79,7 @@
             // 
             // comboBoxMarca
             // 
+            this.comboBoxMarca.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxMarca.FormattingEnabled = true;
             this.comboBoxMarca.Location = new System.Drawing.Point(243, 185);
             this.comboBoxMarca.Name = "comboBoxMarca";
@@ -92,13 +93,14 @@
             this.textBoxCodigo.Size = new System.Drawing.Size(121, 20);
             this.textBoxCodigo.TabIndex = 4;
             // 
-            // comboBoxCategoria
+            // comboBoxCat
             // 
-            this.comboBoxCategoria.FormattingEnabled = true;
-            this.comboBoxCategoria.Location = new System.Drawing.Point(243, 212);
-            this.comboBoxCategoria.Name = "comboBoxCategoria";
-            this.comboBoxCategoria.Size = new System.Drawing.Size(121, 21);
-            this.comboBoxCategoria.TabIndex = 5;
+            this.comboBoxCat.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxCat.FormattingEnabled = true;
+            this.comboBoxCat.Location = new System.Drawing.Point(243, 212);
+            this.comboBoxCat.Name = "comboBoxCat";
+            this.comboBoxCat.Size = new System.Drawing.Size(121, 21);
+            this.comboBoxCat.TabIndex = 5;
             // 
             // textBoxURL
             // 
@@ -205,6 +207,7 @@
             this.buttonAgregar.Text = "Agregar";
             this.buttonAgregar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.buttonAgregar.UseVisualStyleBackColor = true;
+            this.buttonAgregar.Click += new System.EventHandler(this.buttonAgregar_Click);
             // 
             // pictureBox1
             // 
@@ -231,7 +234,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBoxURL);
-            this.Controls.Add(this.comboBoxCategoria);
+            this.Controls.Add(this.comboBoxCat);
             this.Controls.Add(this.textBoxCodigo);
             this.Controls.Add(this.comboBoxMarca);
             this.Controls.Add(this.textBoxNombre);
@@ -239,6 +242,7 @@
             this.Controls.Add(this.labelTitulo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormAgregarArticulo";
+            this.Load += new System.EventHandler(this.FormAgregarArticulo_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -252,7 +256,7 @@
         private System.Windows.Forms.TextBox textBoxNombre;
         private System.Windows.Forms.ComboBox comboBoxMarca;
         private System.Windows.Forms.TextBox textBoxCodigo;
-        private System.Windows.Forms.ComboBox comboBoxCategoria;
+        private System.Windows.Forms.ComboBox comboBoxCat;
         private System.Windows.Forms.TextBox textBoxURL;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;

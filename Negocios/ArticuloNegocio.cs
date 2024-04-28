@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 using Dominios;
+using System.Security.Cryptography.X509Certificates;
 
 namespace Negocios
 {
@@ -55,36 +56,58 @@ namespace Negocios
         public List<string> listarNombres()
         {
             List<string> lista = new List<string>();
-            SqlConnection conexion = new SqlConnection();
-            SqlCommand comando = new SqlCommand();
-            SqlDataReader lector;
+            AccessoDatos datos = new AccessoDatos();
             try
             {
-                conexion.ConnectionString = "server=.\\SQLEXPRESS; database=CATALOGO_P3_DB; integrated security=true";
-                comando.CommandType = System.Data.CommandType.Text;
-                comando.CommandText = "select Nombre from ARTICULOS";
-                comando.Connection = conexion;
+                datos.setearConsulta("select Nombre from ARTICULOS");
+                datos.ejecutarLectura();
 
-                conexion.Open();
-                lector = comando.ExecuteReader();
-
-                while (lector.Read())
+                while (datos.Lector.Read())
                 {
                     string nombre;
-                    nombre = (string)lector["Nombre"];
+                    nombre = (string)datos.Lector["Nombre"];
                     lista.Add(nombre);
                 }
 
-                conexion.Close();
                 return lista;
 
             }
             catch (Exception ex)
             {
 
-                throw;
+                throw ex;
+            }
+            finally
+            {
+                datos.cerrarConexion();
             }
 
+        }
+
+        public void agregar(Articulo nuevo)
+        {
+            AccessoDatos datos = new AccessoDatos();
+
+            try
+            {
+                datos.setearConsulta("insert into ARTICULOS(Codigo, Nombre, Descripcion, IdMarca, IdCategoria, Precio) values(@codigo, @nombre, @descripcion, @idmarca, @idcategoria, @precio)");
+                datos.setearParametro("@codigo", nuevo.codigo);
+                datos.setearParametro("@nombre", nuevo.nombre);
+                datos.setearParametro("@descripcion", nuevo.descripcion);
+                datos.setearParametro("@idmarca", nuevo.marca.Id);
+                datos.setearParametro("@idcategoria", nuevo.categoria.Id);
+                datos.setearParametro("@precio", nuevo.precio);
+                datos.ejecutarAccion();
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+            finally
+            {
+                datos.cerrarConexion();
+            }
         }
     }
 }

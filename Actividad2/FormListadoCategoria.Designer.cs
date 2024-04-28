@@ -125,8 +125,11 @@
             // 
             this.dataGridViewCategorias.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridViewCategorias.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewCategorias.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.dataGridViewCategorias.Location = new System.Drawing.Point(53, 93);
+            this.dataGridViewCategorias.MultiSelect = false;
             this.dataGridViewCategorias.Name = "dataGridViewCategorias";
+            this.dataGridViewCategorias.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridViewCategorias.Size = new System.Drawing.Size(698, 259);
             this.dataGridViewCategorias.TabIndex = 27;
             // 
