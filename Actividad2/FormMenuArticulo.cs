@@ -14,6 +14,46 @@ namespace WindowsForms
     public partial class FormMenuArticulo : Form
     {
         private List<Articulo> ListaArticulo;
+
+        private bool validarFiltro()
+        {
+            if (comboBoxCampo.SelectedIndex < 0)
+            {
+                MessageBox.Show("Por favor, seleccione un campo para filtrar");
+                return true;
+            }
+            if (comboBoxCriterio.SelectedIndex < 0)
+            {
+                MessageBox.Show("Por favor, seleccione un criterio para filtrar");
+                return true;
+            }
+            if (comboBoxCampo.SelectedItem.ToString() == "Precio")
+            {
+                if (textBoxFiltroAvanzado.Text.Length == 0)
+                {
+                    MessageBox.Show("Por favor ingrese algun numero en el campo de filtro avanzado");
+                    return true;
+                }
+                if (!(soloNumeros(textBoxFiltroAvanzado.Text)))
+                {
+                    MessageBox.Show("Solo se permiten caracteres numericos en el campo precio");
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        private bool soloNumeros(string cadena)
+        {
+            foreach (char caracter in cadena)
+            {
+                if (!(char.IsNumber(caracter)))
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
         public FormMenuArticulo()
         {
             InitializeComponent();
@@ -139,6 +179,8 @@ namespace WindowsForms
         {
             List<Articulo> listaFiltrada = new List<Articulo>();
             ArticuloNegocio negocio = new ArticuloNegocio();
+            if(validarFiltro())
+                return;
             try
             {
                 string campo = comboBoxCampo.SelectedItem.ToString();
