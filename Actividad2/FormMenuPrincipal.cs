@@ -34,7 +34,6 @@ namespace WindowsForms
             ventanaAA.TopLevel = false;
         }
 
-
         private void FormMenuPrincipal_Load(object sender, EventArgs e)
         {
 
@@ -109,6 +108,10 @@ namespace WindowsForms
                 VentanaListadoCategoria.Dock = DockStyle.Fill;
                 VentanaListadoCategoria.TopLevel = false;
             }
-        
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
     }
 }

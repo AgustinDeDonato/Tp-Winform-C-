@@ -24,7 +24,7 @@ namespace WindowsForms
             this.Close();
         }
 
-        private void btneliminarArticulo_Click(object sender, EventArgs e)
+        /*private void btneliminarArticulo_Click(object sender, EventArgs e)
         {
             ArticuloNegocio negocio = new ArticuloNegocio();
             Articulo seleccionado;
@@ -43,6 +43,33 @@ namespace WindowsForms
                 MessageBox.Show(ex.ToString());
             }
             MessageBox.Show("Se ha eliminado Correctamente");
+        }*/
+        private void btneliminarArticulo_Click(object sender, EventArgs e)
+        {
+            ArticuloNegocio negocio = new ArticuloNegocio();
+            // Baja Fisica Marca
+            try
+            {
+                DialogResult respuesta = MessageBox.Show("¿De verdad querés eliminarlo?", "Eliminando", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                if (respuesta == DialogResult.Yes)
+                {
+                    // Verifica si el SelectedItem es un objeto Articulo
+                    if (comboboxArticulo.SelectedItem != null && comboboxArticulo.SelectedItem is Articulo)
+                    {
+                        Articulo seleccionado = (Articulo)comboboxArticulo.SelectedItem;
+                        negocio.eliminar(seleccionado.codigo);
+                        MessageBox.Show("Se ha eliminado correctamente");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Por favor, selecciona un artículo válido para eliminar");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al intentar eliminar el artículo: " + ex.Message);
+            }
         }
 
         private void comboboxArticulo_SelectedIndexChanged(object sender, EventArgs e)

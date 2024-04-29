@@ -11,6 +11,33 @@ namespace Negocios
 {
     public class ArticuloNegocio
     {
+        public int UltimoId()
+        {
+            AccessoDatos datos = new AccessoDatos();
+            try
+            {
+                datos.setearConsulta("SELECT MAX(Id) AS UltimoId FROM ARTICULOS");
+                datos.ejecutarLectura();
+                int UltimoId = 0;
+                if (datos.Lector.Read())
+                {
+                    if (!datos.Lector.IsDBNull(0))
+                    {
+                        UltimoId = (int)datos.Lector["UltimoId"];
+                    }
+                }
+
+                return UltimoId;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                datos.cerrarConexion();
+            }
+        }
         public List<Articulo> listar()
         {
             List<Articulo> lista = new List<Articulo>();
@@ -90,7 +117,7 @@ namespace Negocios
 
             try
             {
-                datos.setearConsulta("insert into ARTICULOS(Codigo, Nombre, Descripcion, IdMarca, IdCategoria, Precio) values(@codigo, @nombre, @descripcion, @idmarca, @idcategoria, @precio)");
+                datos.setearConsulta("INSERT INTO ARTICULOS (Codigo, Nombre, Descripcion, IdMarca, IdCategoria, Precio) VALUES (@codigo, @nombre, @descripcion, @idmarca, @idcategoria, @precio)");
                 datos.setearParametro("@codigo", nuevo.codigo);
                 datos.setearParametro("@nombre", nuevo.nombre);
                 datos.setearParametro("@descripcion", nuevo.descripcion);
@@ -98,6 +125,8 @@ namespace Negocios
                 datos.setearParametro("@idcategoria", nuevo.categoria.Id);
                 datos.setearParametro("@precio", nuevo.precio);
                 datos.ejecutarAccion();
+
+         
             }
             catch (Exception ex)
             {

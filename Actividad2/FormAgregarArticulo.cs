@@ -27,13 +27,21 @@ namespace WindowsForms
         private void buttonAgregar_Click(object sender, EventArgs e)
         {
             Articulo nuevo = new Articulo();
+            nuevo.imagen = new Imagen();
             ArticuloNegocio negocioArt = new ArticuloNegocio();
+            ImagenNegocio negocioIma = new Negocios.ImagenNegocio();
 
             try
             {
                 nuevo.nombre = textBoxNombre.Text;
                 nuevo.codigo = textBoxCodigo.Text;
                 nuevo.descripcion = textBoxDescripcion.Text;
+                nuevo.imagen.Url = textBoxURL.Text;
+                /*if (!string.IsNullOrEmpty(textBoxURL.Text))
+                {
+                    nuevo.imagen = new Imagen(); // Inicializa el objeto Imagen si aún no está inicializado
+                    nuevo.imagen.Url = textBoxURL.Text;
+                }*/
                 try
                 {
                    nuevo.precio = Decimal.Parse(textBoxPrecio.Text);
@@ -47,6 +55,8 @@ namespace WindowsForms
                 nuevo.categoria = (Categoria)comboBoxCat.SelectedItem;
 
                 negocioArt.agregar(nuevo);
+                nuevo.imagen.Id = negocioArt.UltimoId();
+                negocioIma.agregar(nuevo.imagen);
                 MessageBox.Show("agregado exitosamente");
 
                 comboBoxMarca.SelectedIndex = -1;
@@ -87,5 +97,24 @@ namespace WindowsForms
         {
 
         }
+
+
+        private void textBoxURL_Leave(object sender, EventArgs e)
+        {
+            CargarImagen(textBoxURL.Text);
+        }
+        private void CargarImagen(string imagen)
+        {
+            try
+            {
+                pbxArticulo.Load(imagen);
+            }
+            catch (Exception ex)
+            {
+                pbxArticulo.Load("https://cdn.icon-icons.com/icons2/3001/PNG/512/default_filetype_file_empty_document_icon_187718.png");
+            }
+        }
+
+
     }
 }

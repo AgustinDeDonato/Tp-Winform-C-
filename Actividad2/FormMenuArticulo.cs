@@ -85,8 +85,10 @@ namespace WindowsForms
                     
                     return;
             }
+
+            Articulo seleccionado;
+            seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
             FormModificarArticulo modificarArticulo = new FormModificarArticulo();
-            //Muestra la ventana y no se va a cerrar hasta que se finalice de usar
             modificarArticulo.ShowDialog();
         }
 
@@ -193,6 +195,16 @@ namespace WindowsForms
             {
                 MessageBox.Show(ex.ToString());
             }
+        }
+
+        private void pbxArticulo_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dgvArticulos_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
         // Motor de busqueda para el listbox 
         // Funcionalidad dormida hasta no tener colleccion de articulos

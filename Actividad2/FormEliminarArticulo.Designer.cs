@@ -39,7 +39,7 @@
             // 
             this.labelNombre.AutoSize = true;
             this.labelNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelNombre.Location = new System.Drawing.Point(251, 188);
+            this.labelNombre.Location = new System.Drawing.Point(126, 184);
             this.labelNombre.Name = "labelNombre";
             this.labelNombre.Size = new System.Drawing.Size(23, 16);
             this.labelNombre.TabIndex = 45;
@@ -50,7 +50,7 @@
             this.labelTituloMarca.AutoSize = true;
             this.labelTituloMarca.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.labelTituloMarca.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTituloMarca.Location = new System.Drawing.Point(289, 67);
+            this.labelTituloMarca.Location = new System.Drawing.Point(119, 67);
             this.labelTituloMarca.Name = "labelTituloMarca";
             this.labelTituloMarca.Size = new System.Drawing.Size(169, 27);
             this.labelTituloMarca.TabIndex = 44;
@@ -59,7 +59,7 @@
             // comboboxArticulo
             // 
             this.comboboxArticulo.FormattingEnabled = true;
-            this.comboboxArticulo.Location = new System.Drawing.Point(337, 187);
+            this.comboboxArticulo.Location = new System.Drawing.Point(155, 184);
             this.comboboxArticulo.Name = "comboboxArticulo";
             this.comboboxArticulo.Size = new System.Drawing.Size(121, 21);
             this.comboboxArticulo.TabIndex = 55;
@@ -70,7 +70,7 @@
             this.btnAtrasListaMarca.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btnAtrasListaMarca.Image = global::Actividad2.Properties.Resources.icons8_atrás_161;
             this.btnAtrasListaMarca.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAtrasListaMarca.Location = new System.Drawing.Point(54, 379);
+            this.btnAtrasListaMarca.Location = new System.Drawing.Point(22, 384);
             this.btnAtrasListaMarca.Name = "btnAtrasListaMarca";
             this.btnAtrasListaMarca.Size = new System.Drawing.Size(59, 32);
             this.btnAtrasListaMarca.TabIndex = 48;
@@ -83,7 +83,7 @@
             // 
             this.btneliminarArticulo.Image = global::Actividad2.Properties.Resources.multiply;
             this.btneliminarArticulo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btneliminarArticulo.Location = new System.Drawing.Point(331, 277);
+            this.btneliminarArticulo.Location = new System.Drawing.Point(155, 267);
             this.btneliminarArticulo.Name = "btneliminarArticulo";
             this.btneliminarArticulo.Size = new System.Drawing.Size(80, 32);
             this.btneliminarArticulo.TabIndex = 47;
@@ -96,7 +96,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(399, 450);
             this.Controls.Add(this.comboboxArticulo);
             this.Controls.Add(this.btnAtrasListaMarca);
             this.Controls.Add(this.btneliminarArticulo);
