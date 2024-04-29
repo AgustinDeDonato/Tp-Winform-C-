@@ -45,18 +45,21 @@ namespace Negocios
             
             try
             {         
-                datos.setearConsulta("select A.Id, Codigo, Nombre, A.Descripcion, M.Descripcion Marca, C.Descripcion Categoria, I.ImagenUrl, A.Precio from ARTICULOS A, IMAGENES I, MARCAS M, CATEGORIAS C WHERE A.Id = I.IdArticulo AND A.IdMarca = M.Id AND A.IdCategoria = C.Id");
+                datos.setearConsulta("select A.Id IdArticulo, Codigo, Nombre, A.Descripcion, M.Descripcion Marca, C.Descripcion Categoria, I.ImagenUrl, A.Precio, M.Id IdMarca, C.Id IdCategoria from ARTICULOS A, IMAGENES I, MARCAS M, CATEGORIAS C WHERE A.Id = I.IdArticulo AND A.IdMarca = M.Id AND A.IdCategoria = C.Id");
                 datos.ejecutarLectura();
 
                 while (datos.Lector.Read())
                 {
                     Articulo articulo = new Articulo();
+                    articulo.Id = (int)datos.Lector["IdArticulo"];
                     articulo.codigo = (string)datos.Lector["Codigo"];
                     articulo.nombre = (string)datos.Lector["Nombre"];
                     articulo.descripcion = (string)datos.Lector["Descripcion"];
                     articulo.marca = new Marca();
+                    articulo.marca.Id = (int)datos.Lector["IdMarca"];
                     articulo.marca.Descripcion = (string)datos.Lector["Marca"];
                     articulo.categoria = new Categoria();
+                    articulo.categoria.Id = (int)datos.Lector["IdCategoria"];
                     articulo.categoria.Descripcion = (string)datos.Lector["Categoria"];
                     articulo.imagen = new Imagen();
                     articulo.imagen.Url = (string)datos.Lector["ImagenUrl"];
@@ -317,6 +320,32 @@ namespace Negocios
                 throw ex;
             }
 
+        }
+
+        public void modificar(Articulo art)
+        {
+            AccessoDatos datos = new AccessoDatos();
+            try
+            {
+                datos.setearConsulta("update ARTICULOS set CODIGO = @Codigo, Nombre = @Nombre, Descripcion = @Desc, IdMarca = @Marca, IdCategoria = @Categoria, Precio = @Precio where Id = @Id");
+                datos.setearParametro("@Codigo", art.codigo);
+                datos.setearParametro("@Nombre", art.nombre);
+                datos.setearParametro("@Desc", art.descripcion);
+                datos.setearParametro("@Marca", art.marca.Id);
+                datos.setearParametro("@Categoria", art.categoria.Id);
+                datos.setearParametro("@Precio", art.precio);
+                datos.setearParametro("@Id", art.Id);
+
+                datos.ejecutarAccion();
+            }
+            catch(Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                datos.cerrarConexion();
+            }
         }
 
     }

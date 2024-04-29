@@ -15,6 +15,8 @@ namespace WindowsForms
     {
         private List<Articulo> ListaArticulo;
 
+        
+
         private bool validarFiltro()
         {
             if (comboBoxCampo.SelectedIndex < 0)
@@ -88,7 +90,7 @@ namespace WindowsForms
 
             Articulo seleccionado;
             seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
-            FormModificarArticulo modificarArticulo = new FormModificarArticulo();
+            FormModificarArticulo modificarArticulo = new FormModificarArticulo(seleccionado);
             modificarArticulo.ShowDialog();
         }
 
