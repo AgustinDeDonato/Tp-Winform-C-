@@ -1,0 +1,321 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\agusd\\source\\repos\\tp-winform-equipo-28\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{26A43869-F2C2-45FD-A768-E4FC38F65503}|Actividad2\\WindowsForms.csproj|c:\\users\\agusd\\source\\repos\\tp-winform-equipo-28\\actividad2\\formeliminarmarca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26A43869-F2C2-45FD-A768-E4FC38F65503}|Actividad2\\WindowsForms.csproj|solutionrelative:actividad2\\formeliminarmarca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26A43869-F2C2-45FD-A768-E4FC38F65503}|Actividad2\\WindowsForms.csproj|c:\\users\\agusd\\source\\repos\\tp-winform-equipo-28\\actividad2\\formeliminarcategoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26A43869-F2C2-45FD-A768-E4FC38F65503}|Actividad2\\WindowsForms.csproj|solutionrelative:actividad2\\formeliminarcategoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26A43869-F2C2-45FD-A768-E4FC38F65503}|Actividad2\\WindowsForms.csproj|c:\\users\\agusd\\source\\repos\\tp-winform-equipo-28\\actividad2\\formeliminarmarca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{26A43869-F2C2-45FD-A768-E4FC38F65503}|Actividad2\\WindowsForms.csproj|solutionrelative:actividad2\\formeliminarmarca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26A43869-F2C2-45FD-A768-E4FC38F65503}|Actividad2\\WindowsForms.csproj|C:\\Users\\agusd\\source\\repos\\tp-winform-equipo-28\\actividad2\\formeliminararticulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26A43869-F2C2-45FD-A768-E4FC38F65503}|Actividad2\\WindowsForms.csproj|solutionrelative:actividad2\\formeliminararticulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26A43869-F2C2-45FD-A768-E4FC38F65503}|Actividad2\\WindowsForms.csproj|c:\\users\\agusd\\source\\repos\\tp-winform-equipo-28\\actividad2\\formeliminarcategoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{26A43869-F2C2-45FD-A768-E4FC38F65503}|Actividad2\\WindowsForms.csproj|solutionrelative:actividad2\\formeliminarcategoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26A43869-F2C2-45FD-A768-E4FC38F65503}|Actividad2\\WindowsForms.csproj|C:\\Users\\agusd\\source\\repos\\tp-winform-equipo-28\\actividad2\\formeliminararticulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{26A43869-F2C2-45FD-A768-E4FC38F65503}|Actividad2\\WindowsForms.csproj|solutionrelative:actividad2\\formeliminararticulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26A43869-F2C2-45FD-A768-E4FC38F65503}|Actividad2\\WindowsForms.csproj|c:\\users\\agusd\\source\\repos\\tp-winform-equipo-28\\actividad2\\formlistadocategoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26A43869-F2C2-45FD-A768-E4FC38F65503}|Actividad2\\WindowsForms.csproj|solutionrelative:actividad2\\formlistadocategoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26A43869-F2C2-45FD-A768-E4FC38F65503}|Actividad2\\WindowsForms.csproj|C:\\Users\\agusd\\source\\repos\\tp-winform-equipo-28\\actividad2\\formagregararticulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26A43869-F2C2-45FD-A768-E4FC38F65503}|Actividad2\\WindowsForms.csproj|solutionrelative:actividad2\\formagregararticulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26A43869-F2C2-45FD-A768-E4FC38F65503}|Actividad2\\WindowsForms.csproj|C:\\Users\\agusd\\source\\repos\\tp-winform-equipo-28\\actividad2\\formagregarcategoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26A43869-F2C2-45FD-A768-E4FC38F65503}|Actividad2\\WindowsForms.csproj|solutionrelative:actividad2\\formagregarcategoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC3231D5-65A2-43BD-8293-67955C09AEAB}|Negocios\\Negocios.csproj|c:\\users\\agusd\\source\\repos\\tp-winform-equipo-28\\negocios\\categorianegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC3231D5-65A2-43BD-8293-67955C09AEAB}|Negocios\\Negocios.csproj|solutionrelative:negocios\\categorianegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26A43869-F2C2-45FD-A768-E4FC38F65503}|Actividad2\\WindowsForms.csproj|c:\\users\\agusd\\source\\repos\\tp-winform-equipo-28\\actividad2\\formlistadocategoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{26A43869-F2C2-45FD-A768-E4FC38F65503}|Actividad2\\WindowsForms.csproj|solutionrelative:actividad2\\formlistadocategoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26A43869-F2C2-45FD-A768-E4FC38F65503}|Actividad2\\WindowsForms.csproj|c:\\users\\agusd\\source\\repos\\tp-winform-equipo-28\\actividad2\\formlistadomarca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26A43869-F2C2-45FD-A768-E4FC38F65503}|Actividad2\\WindowsForms.csproj|solutionrelative:actividad2\\formlistadomarca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26A43869-F2C2-45FD-A768-E4FC38F65503}|Actividad2\\WindowsForms.csproj|c:\\users\\agusd\\source\\repos\\tp-winform-equipo-28\\actividad2\\formlistadomarca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{26A43869-F2C2-45FD-A768-E4FC38F65503}|Actividad2\\WindowsForms.csproj|solutionrelative:actividad2\\formlistadomarca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17EC276F-77DF-48DB-BA55-0A804891998F}|Dominios\\Dominios.csproj|c:\\users\\agusd\\source\\repos\\tp-winform-equipo-28\\dominios\\articulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17EC276F-77DF-48DB-BA55-0A804891998F}|Dominios\\Dominios.csproj|solutionrelative:dominios\\articulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26A43869-F2C2-45FD-A768-E4FC38F65503}|Actividad2\\WindowsForms.csproj|c:\\users\\agusd\\source\\repos\\tp-winform-equipo-28\\actividad2\\formeliminararticulo.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26A43869-F2C2-45FD-A768-E4FC38F65503}|Actividad2\\WindowsForms.csproj|solutionrelative:actividad2\\formeliminararticulo.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC3231D5-65A2-43BD-8293-67955C09AEAB}|Negocios\\Negocios.csproj|c:\\users\\agusd\\source\\repos\\tp-winform-equipo-28\\negocios\\marcanegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC3231D5-65A2-43BD-8293-67955C09AEAB}|Negocios\\Negocios.csproj|solutionrelative:negocios\\marcanegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26A43869-F2C2-45FD-A768-E4FC38F65503}|Actividad2\\WindowsForms.csproj|c:\\users\\agusd\\source\\repos\\tp-winform-equipo-28\\actividad2\\formbusquedaavanzada.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26A43869-F2C2-45FD-A768-E4FC38F65503}|Actividad2\\WindowsForms.csproj|solutionrelative:actividad2\\formbusquedaavanzada.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26A43869-F2C2-45FD-A768-E4FC38F65503}|Actividad2\\WindowsForms.csproj|c:\\users\\agusd\\source\\repos\\tp-winform-equipo-28\\actividad2\\formagregarmarca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26A43869-F2C2-45FD-A768-E4FC38F65503}|Actividad2\\WindowsForms.csproj|solutionrelative:actividad2\\formagregarmarca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FormEliminarArticulo.cs",
+              "DocumentMoniker": "C:\\Users\\agusd\\source\\repos\\tp-winform-equipo-28\\Actividad2\\FormEliminarArticulo.cs",
+              "RelativeDocumentMoniker": "Actividad2\\FormEliminarArticulo.cs",
+              "ToolTip": "C:\\Users\\agusd\\source\\repos\\tp-winform-equipo-28\\Actividad2\\FormEliminarArticulo.cs",
+              "RelativeToolTip": "Actividad2\\FormEliminarArticulo.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAIwBoAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T14:05:44.019Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FormEliminarCategoria.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\agusd\\source\\repos\\tp-winform-equipo-28\\Actividad2\\FormEliminarCategoria.cs",
+              "RelativeDocumentMoniker": "Actividad2\\FormEliminarCategoria.cs",
+              "ToolTip": "C:\\Users\\agusd\\source\\repos\\tp-winform-equipo-28\\Actividad2\\FormEliminarCategoria.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Actividad2\\FormEliminarCategoria.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T19:48:31.008Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FormEliminarMarca.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\agusd\\source\\repos\\tp-winform-equipo-28\\Actividad2\\FormEliminarMarca.cs",
+              "RelativeDocumentMoniker": "Actividad2\\FormEliminarMarca.cs",
+              "ToolTip": "C:\\Users\\agusd\\source\\repos\\tp-winform-equipo-28\\Actividad2\\FormEliminarMarca.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Actividad2\\FormEliminarMarca.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T19:48:35.763Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FormEliminarCategoria.cs",
+              "DocumentMoniker": "C:\\Users\\agusd\\source\\repos\\tp-winform-equipo-28\\Actividad2\\FormEliminarCategoria.cs",
+              "RelativeDocumentMoniker": "Actividad2\\FormEliminarCategoria.cs",
+              "ToolTip": "C:\\Users\\agusd\\source\\repos\\tp-winform-equipo-28\\Actividad2\\FormEliminarCategoria.cs",
+              "RelativeToolTip": "Actividad2\\FormEliminarCategoria.cs",
+              "ViewState": "AQIAAC8AAAAAAAAAAAAwwCYAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T19:54:47.874Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FormEliminarMarca.cs",
+              "DocumentMoniker": "C:\\Users\\agusd\\source\\repos\\tp-winform-equipo-28\\Actividad2\\FormEliminarMarca.cs",
+              "RelativeDocumentMoniker": "Actividad2\\FormEliminarMarca.cs",
+              "ToolTip": "C:\\Users\\agusd\\source\\repos\\tp-winform-equipo-28\\Actividad2\\FormEliminarMarca.cs",
+              "RelativeToolTip": "Actividad2\\FormEliminarMarca.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAowC0AAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T20:07:35.17Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FormEliminarArticulo.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\agusd\\source\\repos\\tp-winform-equipo-28\\Actividad2\\FormEliminarArticulo.cs",
+              "RelativeDocumentMoniker": "Actividad2\\FormEliminarArticulo.cs",
+              "ToolTip": "C:\\Users\\agusd\\source\\repos\\tp-winform-equipo-28\\Actividad2\\FormEliminarArticulo.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Actividad2\\FormEliminarArticulo.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T14:05:40.733Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FormListadoCategoria.cs",
+              "DocumentMoniker": "C:\\Users\\agusd\\source\\repos\\tp-winform-equipo-28\\Actividad2\\FormListadoCategoria.cs",
+              "RelativeDocumentMoniker": "Actividad2\\FormListadoCategoria.cs",
+              "ToolTip": "C:\\Users\\agusd\\source\\repos\\tp-winform-equipo-28\\Actividad2\\FormListadoCategoria.cs",
+              "RelativeToolTip": "Actividad2\\FormListadoCategoria.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAgwBwAAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T20:27:00.892Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "FormAgregarArticulo.cs",
+              "DocumentMoniker": "C:\\Users\\agusd\\source\\repos\\tp-winform-equipo-28\\Actividad2\\FormAgregarArticulo.cs",
+              "RelativeDocumentMoniker": "Actividad2\\FormAgregarArticulo.cs",
+              "ToolTip": "C:\\Users\\agusd\\source\\repos\\tp-winform-equipo-28\\Actividad2\\FormAgregarArticulo.cs",
+              "RelativeToolTip": "Actividad2\\FormAgregarArticulo.cs",
+              "ViewState": "AQIAADsAAAAAAAAAAAAwwEIAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T14:06:11.816Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "FormAgregarCategoria.cs",
+              "DocumentMoniker": "C:\\Users\\agusd\\source\\repos\\tp-winform-equipo-28\\Actividad2\\FormAgregarCategoria.cs",
+              "RelativeDocumentMoniker": "Actividad2\\FormAgregarCategoria.cs",
+              "ToolTip": "C:\\Users\\agusd\\source\\repos\\tp-winform-equipo-28\\Actividad2\\FormAgregarCategoria.cs",
+              "RelativeToolTip": "Actividad2\\FormAgregarCategoria.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAQwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T14:09:15.074Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CategoriaNegocio.cs",
+              "DocumentMoniker": "C:\\Users\\agusd\\source\\repos\\tp-winform-equipo-28\\Negocios\\CategoriaNegocio.cs",
+              "RelativeDocumentMoniker": "Negocios\\CategoriaNegocio.cs",
+              "ToolTip": "C:\\Users\\agusd\\source\\repos\\tp-winform-equipo-28\\Negocios\\CategoriaNegocio.cs",
+              "RelativeToolTip": "Negocios\\CategoriaNegocio.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAowEIAAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T19:41:11.492Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "FormListadoCategoria.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\agusd\\source\\repos\\tp-winform-equipo-28\\Actividad2\\FormListadoCategoria.cs",
+              "RelativeDocumentMoniker": "Actividad2\\FormListadoCategoria.cs",
+              "ToolTip": "C:\\Users\\agusd\\source\\repos\\tp-winform-equipo-28\\Actividad2\\FormListadoCategoria.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Actividad2\\FormListadoCategoria.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T20:26:57.495Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "FormListadoMarca.cs",
+              "DocumentMoniker": "C:\\Users\\agusd\\source\\repos\\tp-winform-equipo-28\\Actividad2\\FormListadoMarca.cs",
+              "RelativeDocumentMoniker": "Actividad2\\FormListadoMarca.cs",
+              "ToolTip": "C:\\Users\\agusd\\source\\repos\\tp-winform-equipo-28\\Actividad2\\FormListadoMarca.cs",
+              "RelativeToolTip": "Actividad2\\FormListadoMarca.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAgwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T20:25:53.38Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "FormListadoMarca.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\agusd\\source\\repos\\tp-winform-equipo-28\\Actividad2\\FormListadoMarca.cs",
+              "RelativeDocumentMoniker": "Actividad2\\FormListadoMarca.cs",
+              "ToolTip": "C:\\Users\\agusd\\source\\repos\\tp-winform-equipo-28\\Actividad2\\FormListadoMarca.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Actividad2\\FormListadoMarca.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T20:25:48.988Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Articulo.cs",
+              "DocumentMoniker": "C:\\Users\\agusd\\source\\repos\\tp-winform-equipo-28\\Dominios\\Articulo.cs",
+              "RelativeDocumentMoniker": "Dominios\\Articulo.cs",
+              "ToolTip": "C:\\Users\\agusd\\source\\repos\\tp-winform-equipo-28\\Dominios\\Articulo.cs",
+              "RelativeToolTip": "Dominios\\Articulo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T20:22:45.615Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "FormEliminarArticulo.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\agusd\\Source\\Repos\\tp-winform-equipo-28\\Actividad2\\FormEliminarArticulo.Designer.cs",
+              "RelativeDocumentMoniker": "Actividad2\\FormEliminarArticulo.Designer.cs",
+              "ToolTip": "C:\\Users\\agusd\\Source\\Repos\\tp-winform-equipo-28\\Actividad2\\FormEliminarArticulo.Designer.cs",
+              "RelativeToolTip": "Actividad2\\FormEliminarArticulo.Designer.cs",
+              "ViewState": "AQIAAGsAAAAAAAAAAAAWwHoAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T20:17:35.852Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "FormBusquedaAvanzada.cs",
+              "DocumentMoniker": "C:\\Users\\agusd\\source\\repos\\tp-winform-equipo-28\\Actividad2\\FormBusquedaAvanzada.cs",
+              "RelativeDocumentMoniker": "Actividad2\\FormBusquedaAvanzada.cs",
+              "ToolTip": "C:\\Users\\agusd\\source\\repos\\tp-winform-equipo-28\\Actividad2\\FormBusquedaAvanzada.cs",
+              "RelativeToolTip": "Actividad2\\FormBusquedaAvanzada.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T19:49:54.628Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "MarcaNegocio.cs",
+              "DocumentMoniker": "C:\\Users\\agusd\\source\\repos\\tp-winform-equipo-28\\Negocios\\MarcaNegocio.cs",
+              "RelativeDocumentMoniker": "Negocios\\MarcaNegocio.cs",
+              "ToolTip": "C:\\Users\\agusd\\source\\repos\\tp-winform-equipo-28\\Negocios\\MarcaNegocio.cs",
+              "RelativeToolTip": "Negocios\\MarcaNegocio.cs",
+              "ViewState": "AQIAAC8AAAAAAAAAAAA2wEoAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T19:46:01.572Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "FormAgregarMarca.cs",
+              "DocumentMoniker": "C:\\Users\\agusd\\source\\repos\\tp-winform-equipo-28\\Actividad2\\FormAgregarMarca.cs",
+              "RelativeDocumentMoniker": "Actividad2\\FormAgregarMarca.cs",
+              "ToolTip": "C:\\Users\\agusd\\source\\repos\\tp-winform-equipo-28\\Actividad2\\FormAgregarMarca.cs",
+              "RelativeToolTip": "Actividad2\\FormAgregarMarca.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAQwBgAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T14:09:29.923Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

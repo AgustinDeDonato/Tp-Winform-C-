@@ -1,0 +1,6 @@
+C:\Users\agusd\Source\Repos\tp-winform-equipo-28\Dominios\bin\Debug\Dominios.dll
+C:\Users\agusd\Source\Repos\tp-winform-equipo-28\Dominios\bin\Debug\Dominios.pdb
+C:\Users\agusd\Source\Repos\tp-winform-equipo-28\Dominios\obj\Debug\Dominios.csproj.AssemblyReference.cache
+C:\Users\agusd\Source\Repos\tp-winform-equipo-28\Dominios\obj\Debug\Dominios.csproj.CoreCompileInputs.cache
+C:\Users\agusd\Source\Repos\tp-winform-equipo-28\Dominios\obj\Debug\Dominios.dll
+C:\Users\agusd\Source\Repos\tp-winform-equipo-28\Dominios\obj\Debug\Dominios.pdb
